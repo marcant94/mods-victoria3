@@ -1,0 +1,12 @@
+{
+    "name": "Play With any Country, even Decentralized Nations",
+    "id": "3154727769",
+    "version": "1.4",
+    "supported_game_version": "",
+    "short_description": "Play With any Country, even Decentralized Nations",
+    "tags": ["Diplomacy", "Gameplay", "Map", "Utilities"],
+    "relationships": [],
+    "game_custom_data": {
+        "multiplayer_synchronized": false
+    }
+}

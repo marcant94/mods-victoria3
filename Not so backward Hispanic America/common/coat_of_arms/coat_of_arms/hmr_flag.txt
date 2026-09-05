@@ -1,0 +1,102 @@
+
+PLT = {
+	# 1818-29 Flag (light blue with larger central stripe)
+
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "usa_monarchy_blue"
+		color2 = "usa_monarchy_blue"
+		instance = { scale = { 1.0 0.25 } position = { 0.5 0.125 } }	
+		instance = { scale = { 1.0 0.25 } position = { 0.5 0.875 } }		
+	}	
+
+	colored_emblem = {
+		texture = "ce_inti.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 0.55 0.55 } position = { 0.5 0.5 } }
+	}	
+}
+
+HMR = {
+	pattern = "pattern_solid.tga"
+	color1 = "red_dark"
+
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "white"
+		color2 = "yellow_dark"
+	}	
+}
+
+HMR_state = {
+	pattern = "pattern_solid.tga"
+	color1 = "red_dark"
+
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "white"
+		color2 = "yellow_dark"
+	}
+	colored_emblem = {
+		texture = "ce_wreath_peru.dds"
+		color1 = "green"
+		color2 = "green"
+		color3 = "red"
+	instance = { scale = { 0.6 0.6 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_reichsadler.dds"
+		color1 = "brown"
+		color2 = "yellow_dark"
+	instance = { scale = { 0.5 0.5 } position = { 0.5 0.48 } }
+	}
+}
+
+HMR_empire = {
+	pattern = "pattern_solid.tga"
+	color1 = "red_dark"
+
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "white"
+		color2 = "yellow_dark"
+	}
+	textured_emblem = {
+		texture = "te_coa_napoleon_iii.dds"
+		instance = { scale = { 0.6 0.6 } position = { 0.5 0.46 } }
+	}
+}
+
+HMR_communist = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "red"
+}
+
+HMR_republic = {
+	pattern = "pattern_solid.tga"
+	color1 = "red_dark"
+
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "white"
+		color2 = "yellow_dark"
+	}
+	colored_emblem = {
+		texture = "ce_wreath_peru.dds"
+		color1 = "green"
+		color2 = "green"
+		color3 = "red"
+	instance = { scale = { 0.6 0.6 } position = { 0.5 0.5 } }
+	}	
+	colored_emblem = {
+		texture = "ce_sun_of_may.dds"
+		color1 = "yellow_dark"
+		color2 = "yellow_dark"
+	instance = { scale = { 0.45 0.45 } position = { 0.5 0.5 } }
+	}
+}

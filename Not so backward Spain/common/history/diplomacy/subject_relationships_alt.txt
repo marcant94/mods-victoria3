@@ -1,0 +1,20 @@
+﻿DIPLOMACY = {
+
+	c:SPA ?= {
+		# create_diplomatic_pact = {
+		# 	country = c:CUB
+		# 	type = dominion
+		# }
+		
+		# create_diplomatic_pact = {
+		# 	country = c:PHI
+		# 	type = dominion
+		# }	
+	}
+
+	c:PHI = {
+		set_relations = { country = c:MGD value = -100 }
+		set_relations = { country = c:SUL value = -100 }
+	}
+
+}

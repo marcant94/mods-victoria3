@@ -1,0 +1,22 @@
+﻿
+CHL = {
+	color = { 236  159  89 }
+	
+	country_type = colonial
+	
+	tier = kingdom
+	
+	cultures = { chilean south_andean }
+	capital = STATE_SANTIAGO
+}
+
+HMR = {
+	color = { 175 103 31 }
+	
+	country_type = recognized
+
+	tier = empire
+	
+	cultures = { mexican argentine central_american caribeno north_andean south_andean chilean platinean ecuadorian colombian venezuelan peruvian bolivian paraguayan }
+	capital = STATE_ANTIOQUIA
+}

@@ -1,0 +1,9 @@
+
+STATES = {
+	
+    s:STATE_GRANADA = {
+		# España reclama Gibraltar
+		add_claim = c:SPA
+	}
+
+}

@@ -1,0 +1,40 @@
+﻿play_with = {
+	groups= {
+		general
+	}
+
+	requires_approval = no
+	should_notify_third_parties = no
+	show_effect_in_tooltip = yes
+	show_confirmation_box = yes
+	
+	selectable = {
+		is_player = yes
+		NOT = { is_country_type = decentralized }
+	}
+
+	potential = {
+		is_player = yes
+		NOT = { is_country_type = decentralized }
+		scope:target_country = {
+			NOT = { is_country_type = decentralized }
+		}
+	}
+	
+	possible = {
+		is_player = yes
+		scope:target_country = {
+			is_player = no
+		}
+	}
+	
+	accept_effect = {
+		play_as = scope:target_country
+	}
+	
+	ai = {
+		will_break = {
+			always = no			
+		}		
+	}
+}

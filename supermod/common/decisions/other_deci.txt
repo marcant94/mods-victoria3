@@ -1,0 +1,29 @@
+
+dame_pannacionalismo = {
+
+	is_shown = {
+		is_player = yes
+		not = {
+			owner = {
+				has_technology_researched = pan-nationalism
+			}
+		}
+	}
+
+	possible = {
+		is_player = yes
+		not = {
+			owner = {
+				has_technology_researched = pan-nationalism
+			}
+		}
+	}
+	
+	when_taken = {
+		add_technology_researched = pan-nationalism
+	}
+	
+	ai_chance = {
+		base = 0
+	}
+}

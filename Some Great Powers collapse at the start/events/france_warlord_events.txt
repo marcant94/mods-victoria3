@@ -1,0 +1,282 @@
+﻿namespace = france_warlord_events
+
+france_warlord_events.100 = { 
+	type = country_event
+	placement = c:FRA
+	duration = 1
+
+	title = france_warlord_events.100.tt
+	desc = france_warlord_events.100.dd
+	flavor = france_warlord_events.100.ff
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_armored_train.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/armored_train"
+
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+
+	trigger = {
+	    #NOT = { has_global_variable = france_collapse_var }
+	    #this = c:FRA
+		#exist = c:FRA
+	}
+
+	immediate = {
+	
+	    set_global_variable = france_collapse_var
+		
+		if = {
+			limit = {
+				exists = c:AMZ
+				exists = s:STATE_GUAYANA.region_state:FRA
+			}
+			s:STATE_GUAYANA.region_state:FRA = { set_state_owner = c:AMZ }
+		}
+		else_if = {
+			limit = {
+				exists = s:STATE_GUAYANA.region_state:FRA
+			}
+			create_country = {
+				tag = AMZ
+				origin = this
+				state = s:STATE_GUAYANA.region_state:FRA
+			}
+		}
+
+		if = {
+			limit = {
+				exists = s:STATE_GUAYANA.region_state:NET
+			}
+			s:STATE_GUAYANA.region_state:NET = { set_state_owner = c:AMZ }
+		}
+		
+		
+		if = {
+			limit = {
+				exists = c:BIC
+				exists = s:STATE_MADRAS.region_state:FRA
+			}
+			s:STATE_MADRAS.region_state:FRA = { set_state_owner = c:BIC }
+		}
+		else_if = {
+			limit = {
+				exists = c:BGL
+				exists = s:STATE_MADRAS.region_state:FRA
+			}
+			s:STATE_MADRAS.region_state:FRA = { set_state_owner = c:BGL }
+		}
+		
+
+		if = {
+			limit = {
+				exists = c:ALD
+				exists = s:STATE_ORAN.region_state:FRA
+			}
+			s:STATE_ORAN.region_state:FRA = { set_state_owner = c:ALD }
+		}
+		else_if = {
+			limit = {
+				exists = c:MAS
+				exists = s:STATE_ORAN.region_state:FRA
+			}
+			s:STATE_ORAN.region_state:FRA = { set_state_owner = c:MAS }
+		}
+		else_if = {
+			limit = {
+				exists = s:STATE_ORAN.region_state:FRA
+			}
+			create_country = {
+				tag = ALD
+				origin = this
+				state = s:STATE_ORAN.region_state:FRA
+			}
+		}
+
+
+		if = {
+			limit = {
+				exists = c:ALD
+				exists = s:STATE_ALGIERS.region_state:FRA
+			}
+			s:STATE_ALGIERS.region_state:FRA = { set_state_owner = c:ALD }
+		}
+		else_if = {
+			limit = {
+				exists = c:MAS
+				exists = s:STATE_ALGIERS.region_state:FRA
+			}
+			s:STATE_ALGIERS.region_state:FRA = { set_state_owner = c:MAS }
+		}
+		else_if = {
+			limit = {
+				exists = s:STATE_ALGIERS.region_state:FRA
+			}
+			create_country = {
+				tag = ALD
+				origin = this
+				state = s:STATE_ALGIERS.region_state:FRA
+			}
+		}
+
+
+
+		if = {
+			limit = {
+				exists = c:BEL
+				exists = s:STATE_FRENCH_LOW_COUNTRIES.region_state:FRA
+			}
+			s:STATE_FRENCH_LOW_COUNTRIES.region_state:FRA = { set_state_owner = c:BEL }
+		}
+		else_if = {
+			limit = {
+				exists = c:NET
+				exists = s:STATE_FRENCH_LOW_COUNTRIES.region_state:FRA
+			}
+			s:STATE_FRENCH_LOW_COUNTRIES.region_state:FRA = { set_state_owner = c:NET }
+		}
+		else_if = {
+			limit = {
+				exists = c:PRU
+				exists = s:STATE_FRENCH_LOW_COUNTRIES.region_state:FRA
+			}
+			s:STATE_FRENCH_LOW_COUNTRIES.region_state:FRA = { set_state_owner = c:PRU }
+		}
+		
+		if = {
+			limit = {
+				exists = c:BAD
+				exists = s:STATE_ALSACE_LORRAINE.region_state:FRA
+			}
+			s:STATE_ALSACE_LORRAINE.region_state:FRA = { set_state_owner = c:BAD }
+		}
+		else_if = {
+			limit = {
+				exists = c:BAV
+				exists = s:STATE_ALSACE_LORRAINE.region_state:FRA
+			}
+			s:STATE_ALSACE_LORRAINE.region_state:FRA = { set_state_owner = c:BAV }
+		}
+		else_if = {
+			limit = {
+				exists = c:PRU
+				exists = s:STATE_ALSACE_LORRAINE.region_state:FRA
+			}
+			s:STATE_ALSACE_LORRAINE.region_state:FRA = { set_state_owner = c:PRU }
+		}
+		
+		
+		if = {
+			limit = {
+				exists = c:SWI
+				exists = s:STATE_FRANCHE_COMTE.region_state:FRA
+			}
+			s:STATE_FRANCHE_COMTE.region_state:FRA = { set_state_owner = c:SWI }
+		}
+
+
+		if = {
+			limit = {
+				exists = c:BAD
+				exists = s:STATE_LORRAINE.region_state:FRA
+			}
+			s:STATE_LORRAINE.region_state:FRA = { set_state_owner = c:BAD }
+		}
+		else_if = {
+			limit = {
+				exists = c:BAV
+				exists = s:STATE_LORRAINE.region_state:FRA
+			}
+			s:STATE_LORRAINE.region_state:FRA = { set_state_owner = c:BAV }
+		}
+		else_if = {
+			limit = {
+				exists = c:PRU
+				exists = s:STATE_LORRAINE.region_state:FRA
+			}
+			s:STATE_LORRAINE.region_state:FRA = { set_state_owner = c:PRU }
+		}
+
+
+		if = {
+			limit = { exists = s:STATE_BRITTANY.region_state:FRA }
+			create_country = {
+				tag = BRI
+				origin = this
+				state = s:STATE_BRITTANY.region_state:FRA
+			}
+			if = {
+				limit = { exists = s:STATE_NORMANDY.region_state:FRA }
+				s:STATE_NORMANDY.region_state:FRA = { set_state_owner = c:BRI }
+			}
+			if = {
+				limit = { exists = s:STATE_MAINE_ANJOU.region_state:FRA }
+				s:STATE_MAINE_ANJOU.region_state:FRA = { set_state_owner = c:BRI }
+			}
+			if = {
+				limit = { exists = s:STATE_POITOU.region_state:FRA }
+				s:STATE_POITOU.region_state:FRA = { set_state_owner = c:BRI }
+			}
+		}
+		
+		
+		if = {
+			limit = { exists = s:STATE_CORSICA.region_state:FRA }
+			create_country = {
+				tag = COR
+				origin = this
+				state = s:STATE_CORSICA.region_state:FRA
+			}
+			if = {
+				limit = { exists = s:STATE_PROVENCE.region_state:FRA }
+				s:STATE_PROVENCE.region_state:FRA = { set_state_owner = c:COR }
+			}
+			if = {
+				limit = { exists = s:STATE_RHONE.region_state:FRA }
+				s:STATE_RHONE.region_state:FRA = { set_state_owner = c:COR }
+			}
+		}
+		
+
+		if = {
+			limit = { exists = s:STATE_LANGUEDOC.region_state:FRA }
+			create_country = {
+				tag = OCC
+				origin = this
+				state = s:STATE_LANGUEDOC.region_state:FRA
+			}
+			if = {
+				limit = { exists = s:STATE_GUYENNE.region_state:FRA }
+				s:STATE_GUYENNE.region_state:FRA = { set_state_owner = c:OCC }
+			}
+			if = {
+				limit = { exists = s:STATE_AUVERGNE_LIMOUSIN.region_state:FRA }
+				s:STATE_AUVERGNE_LIMOUSIN.region_state:FRA = { set_state_owner = c:OCC }
+			}
+			if = {
+				limit = { exists = s:STATE_AQUITAINE.region_state:FRA }
+				s:STATE_AQUITAINE.region_state:FRA = { set_state_owner = c:OCC }
+			}
+			if = {
+				limit = { exists = s:STATE_SAVOY.region_state:FRA }
+				s:STATE_SAVOY.region_state:FRA = { set_state_owner = c:OCC }
+			}
+		}
+		
+		
+		every_subject_or_below = {
+			make_independent = yes
+		}
+	}
+	
+	option = {
+		default_option = yes
+		name = france_warlord_events.100.aa
+	}
+	
+}
+
+
+

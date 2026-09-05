@@ -1,0 +1,18 @@
+﻿GLOBAL = {
+
+	c:CUB ?= {
+		activate_law = law_type:law_charitable_health_system
+		activate_law = law_type:law_religious_schools
+	}
+
+	c:MEX ?= {
+		activate_law = law_type:law_charitable_health_system
+		activate_law = law_type:law_religious_schools
+	}
+
+	c:UCA ?= {
+		activate_law = law_type:law_charitable_health_system
+		activate_law = law_type:law_religious_schools
+	}
+	
+}

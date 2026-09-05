@@ -1,0 +1,108 @@
+﻿hmr_unite_subject = {
+	is_shown = {
+		OR = {
+			country_has_primary_culture = cu:mexican
+			country_has_primary_culture = cu:argentine
+			country_has_primary_culture = cu:central_american
+			country_has_primary_culture = cu:caribeno
+			country_has_primary_culture = cu:north_andean
+			country_has_primary_culture = cu:south_andean
+			country_has_primary_culture = cu:chilean
+			country_has_primary_culture = cu:platinean
+			country_has_primary_culture = cu:ecuadorian
+			country_has_primary_culture = cu:colombian
+			country_has_primary_culture = cu:venezuelan
+			country_has_primary_culture = cu:peruvian
+			country_has_primary_culture = cu:bolivian
+			country_has_primary_culture = cu:paraguayan
+			country_has_primary_culture = cu:uruguayan
+		}
+		is_subject = yes
+		any_neighbouring_state = {
+			owner = {
+				OR = {
+					country_has_primary_culture = cu:mexican
+					country_has_primary_culture = cu:argentine
+					country_has_primary_culture = cu:central_american
+					country_has_primary_culture = cu:caribeno
+					country_has_primary_culture = cu:north_andean
+					country_has_primary_culture = cu:south_andean
+					country_has_primary_culture = cu:chilean
+					country_has_primary_culture = cu:platinean
+					country_has_primary_culture = cu:ecuadorian
+					country_has_primary_culture = cu:colombian
+					country_has_primary_culture = cu:venezuelan
+					country_has_primary_culture = cu:peruvian
+					country_has_primary_culture = cu:bolivian
+					country_has_primary_culture = cu:paraguayan
+					country_has_primary_culture = cu:uruguayan
+				}
+				is_subject = yes
+				NOT = { THIS = ROOT }
+				top_overlord = {
+					THIS = root.top_overlord
+				}
+			}
+		}
+	}
+
+	possible = {
+		is_at_war = no
+		has_technology_researched = nationalism
+		top_overlord = {
+			relations:root >= relations_threshold:amicable
+		}
+		NOT = { has_modifier = hmr_test_modifier }
+		custom_tooltip = {
+			text = unite_hmr_je_can_tt
+			any_neighbouring_state = {
+				owner = {
+					relations:root >= relations_threshold:amicable
+					OR = {
+						country_has_primary_culture = cu:mexican
+						country_has_primary_culture = cu:argentine
+						country_has_primary_culture = cu:central_american
+						country_has_primary_culture = cu:caribeno
+						country_has_primary_culture = cu:north_andean
+						country_has_primary_culture = cu:south_andean
+						country_has_primary_culture = cu:chilean
+						country_has_primary_culture = cu:platinean
+						country_has_primary_culture = cu:ecuadorian
+						country_has_primary_culture = cu:colombian
+						country_has_primary_culture = cu:venezuelan
+						country_has_primary_culture = cu:peruvian
+						country_has_primary_culture = cu:bolivian
+						country_has_primary_culture = cu:paraguayan
+						country_has_primary_culture = cu:uruguayan
+					}
+					is_ai = yes
+					is_subject = yes
+					NOT = { THIS = ROOT }
+					top_overlord = {
+						THIS = root.top_overlord
+					}
+					this.gdp < root.gdp
+				}
+			}
+		}
+	}
+
+	when_taken = {
+		custom_tooltip = unite_hmr_tt
+		hidden_effect = {
+			trigger_event = { id = hmr_union.1 popup = yes }
+		}
+		add_modifier = {
+			name = hmr_test_modifier
+			months = 12 # short_modifier_time
+		}
+	}
+
+	ai_chance = {
+		base = 0
+		modifier = {
+			has_technology_researched = pan-nationalism
+			add = 100
+		}		
+	}
+}

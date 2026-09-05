@@ -1,0 +1,14 @@
+﻿STATES = {
+	s:STATE_SOUTH_ATLANTIC_ISLANDS = {
+		add_claim = c:ARG
+	}
+	s:STATE_CHACO = {
+		add_claim = c:ARG
+	}
+	s:STATE_SANTA_FE = {
+		add_claim = c:ARG
+	}
+	# s:STATE_BAJO_PARAGUAY = {
+	# 	add_claim = c:ARG
+	# }
+}

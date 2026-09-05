@@ -1,0 +1,6 @@
+﻿l_english:
+  enable_more_tech: "Enable: More tech for the Player"
+  enable_more_tech_desc: "The player receives extra research speed and innovation cap"
+  disable_more_tech: "Disable: More tech for the Player"
+  disable_more_tech_desc: "The player stops receiving extra research speed and innovation cap"
+  mtfp_university_extra:0 "Player tech bonus"

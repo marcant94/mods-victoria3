@@ -1,0 +1,8 @@
+﻿l_spanish:
+  play_with: "Jugar con [TARGET_COUNTRY.GetName]"
+  play_with_action_name: "Jugar con [TARGET_COUNTRY.GetName]"
+  play_with_action_propose_name: "Jugar con [TARGET_COUNTRY.GetName]"
+  play_with_desc: "Jugar con [TARGET_COUNTRY.GetName]"
+  play_with_action_notification_name: "Jugar con [TARGET_COUNTRY.GetName]"
+  play_with_action_notification_desc: "Jugar con [TARGET_COUNTRY.GetName]"
+  

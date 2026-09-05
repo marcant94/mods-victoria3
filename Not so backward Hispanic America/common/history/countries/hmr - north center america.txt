@@ -1,0 +1,15 @@
+﻿COUNTRIES = {
+
+	c:CUB ?= {
+		effect_starting_technology_tier_2_tech = yes
+	}
+
+	c:MEX ?= {
+		effect_starting_technology_tier_2_tech = yes
+	}
+
+	c:UCA ?= {
+		effect_starting_technology_tier_2_tech = yes
+	}
+	
+}

@@ -1,0 +1,5 @@
+﻿l_spanish:
+  show_player_decisions: "Mod: Mostrar decisiones"
+  show_player_decisions_desc: "Muestra las decisiones para el jugador"
+  hide_player_decisions: "Mod: Ocultar decisiones"
+  hide_player_decisions_desc: "Oculta las decisiones para el jugador"

@@ -1,0 +1,13 @@
+{
+  "name" : "Some backward powers",
+  "id" : "3077363316",
+  "version" : "9.0",
+  "supported_game_version" : "",
+  "picture": "thumbnail.png",
+  "short_description" : "Some backward powers",
+  "tags" : [],
+  "relationships" : [],
+  "game_custom_data" : {
+    "multiplayer_synchronized" : true
+  }
+}

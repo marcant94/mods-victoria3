@@ -1,0 +1,520 @@
+﻿namespace = warlord_china_events
+
+warlord_china_events.100 = { #Split china up into warlord states
+	type = country_event
+	placement = c:CHI
+	duration = 1
+
+	title = warlord_china_events.100.t
+	desc = warlord_china_events.100.d
+	flavor = warlord_china_events.100.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_armored_train.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/armored_train"
+
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+
+	trigger = {
+		#exists = c:CHI
+		#this = c:CHI
+		#NOT = { has_global_variable = china_shatters }
+	}
+
+	immediate = {
+		set_global_variable = china_shatters
+		
+		set_variable = chinese_central_government
+		
+		if = {
+			limit = { exists = s:STATE_HUNAN.region_state:CHI }
+			create_country = {
+				tag = HNA
+				origin = this
+				state = s:STATE_HUNAN.region_state:CHI
+
+				on_created = {
+					warlord_setup_effect = yes
+					set_variable = warlord_state
+				}
+			}
+			c:HNA = { save_scope_as = scope_HNA }
+			if = {
+				limit = { exists = s:STATE_WESTERN_HUBEI.region_state:CHI }
+				s:STATE_WESTERN_HUBEI.region_state:CHI = { set_state_owner = c:HNA }
+			}
+			if = {
+				limit = { exists = s:STATE_EASTERN_HUBEI.region_state:CHI }
+				s:STATE_EASTERN_HUBEI.region_state:CHI = { set_state_owner = c:HNA }
+			}
+		}
+
+		if = {
+			limit = { exists = s:STATE_GUANGXI.region_state:CHI }
+			create_country = { #Guangxi
+				tag = GNG
+				origin = this
+				state = s:STATE_GUANGXI.region_state:CHI
+
+				on_created = {
+					warlord_setup_effect = yes
+					set_variable = warlord_state
+				}
+			}
+			c:GNG = { save_scope_as = scope_GNG }
+		}
+
+		if = {
+			limit = { exists = s:STATE_SOUTHERN_ANHUI.region_state:CHI }
+			create_country = { #Anhui Clique
+				tag = AHU
+				origin = this
+				state = s:STATE_SOUTHERN_ANHUI.region_state:CHI
+
+				on_created = {
+					warlord_setup_effect = yes
+					set_variable = warlord_state
+				}
+			}
+			c:AHU = { save_scope_as = scope_AHU }
+			if = {
+				limit = { exists = s:STATE_NORTHERN_ANHUI.region_state:CHI }
+				s:STATE_NORTHERN_ANHUI.region_state:CHI = { set_state_owner = c:AHU }
+			}
+			if = {
+				limit = { exists = s:STATE_HENAN.region_state:CHI }
+				s:STATE_HENAN.region_state:CHI = { set_state_owner = c:AHU }
+			}
+		}
+
+		if = {
+			limit = { exists = s:STATE_ZHILI.region_state:CHI }
+			create_country = { #Zhili Clique
+				tag = ZHI
+				origin = this
+				state = s:STATE_ZHILI.region_state:CHI
+
+				on_created = {
+					warlord_setup_effect = yes
+					set_variable = warlord_state
+				}
+			}
+			c:ZHI = { save_scope_as = scope_ZHI }
+		}
+
+		if = {
+			limit = { exists = s:STATE_SOUTHERN_MANCHURIA.region_state:CHI }
+			create_country = { #Fengtian Clique
+				tag = MCH
+				origin = this
+				state = s:STATE_SOUTHERN_MANCHURIA.region_state:CHI
+
+				on_created = {
+					warlord_setup_effect = yes
+					set_variable = warlord_state
+				}
+			}
+			c:MCH = { save_scope_as = scope_MCH }
+			if = {
+				limit = { exists = s:STATE_NORTHERN_MANCHURIA.region_state:CHI }
+				s:STATE_NORTHERN_MANCHURIA.region_state:CHI = { set_state_owner = c:MCH }
+			}
+			if = {
+				limit = { exists = s:STATE_OUTER_MANCHURIA.region_state:CHI }
+				s:STATE_OUTER_MANCHURIA.region_state:CHI = { set_state_owner = c:MCH }
+			}
+		}
+
+		if = {
+			limit = { exists = s:STATE_SHANXI.region_state:CHI }
+			create_country = {  #Shanxi
+				tag = SHN
+				origin = this
+				state = s:STATE_SHANXI.region_state:CHI
+
+				on_created = {
+					warlord_setup_effect = yes
+					set_variable = warlord_state
+				}
+			}
+			c:SHN = { save_scope_as = scope_SHN }
+		}
+
+		if = {
+			limit = { exists = s:STATE_TIANSHAN.region_state:CHI }
+			create_country = {  #Xinjiang Clique
+				tag = XIN
+				origin = this
+				state = s:STATE_TIANSHAN.region_state:CHI
+
+				on_created = {
+					warlord_setup_effect = yes
+					set_variable = warlord_state
+				}
+			}
+			c:XIN = { save_scope_as = scope_XIN }
+			if = {
+				limit = { exists = s:STATE_DZUNGARIA.region_state:CHI }
+				s:STATE_DZUNGARIA.region_state:CHI = { set_state_owner = c:XIN }
+			}
+		}
+
+		if = {
+			limit = { exists = s:STATE_YUNNAN.region_state:CHI }
+			create_country = {  #Yunnan
+				tag = YUN
+				origin = this
+				state = s:STATE_YUNNAN.region_state:CHI
+
+				on_created = {
+					warlord_setup_effect = yes
+					set_variable = warlord_state
+				}
+			}
+			c:YUN = { save_scope_as = scope_YUN }
+		}
+
+		if = {
+			limit = { exists = s:STATE_GUIZHOU.region_state:CHI }
+			create_country = { #Guizhou
+				tag = GUI
+				origin = this
+				state = s:STATE_GUIZHOU.region_state:CHI
+
+				on_created = {
+					warlord_setup_effect = yes
+					set_variable = warlord_state
+				}
+			}
+			c:GUI = { save_scope_as = scope_GUI }
+			if = {
+				limit = { exists = s:STATE_CHONGQING.region_state:CHI }
+				s:STATE_CHONGQING.region_state:CHI = { set_state_owner = c:GUI }
+			}
+		}
+
+		if = {
+			limit = { exists = s:STATE_GUANGDONG.region_state:CHI }
+			create_country = { #Guangdong
+				tag = YUE
+				origin = this
+				state = s:STATE_GUANGDONG.region_state:CHI
+
+				on_created = {
+					warlord_setup_effect = yes
+					set_variable = warlord_state
+				}
+			}
+			c:YUE = { save_scope_as = scope_YUE }
+			if = {
+				limit = { exists = s:STATE_SHAOZHOU.region_state:CHI }
+				s:STATE_SHAOZHOU.region_state:CHI = { set_state_owner = c:YUE }
+			}
+		}
+
+		if = {
+			limit = { exists = s:STATE_SICHUAN.region_state:CHI }
+			create_country = {
+				tag = SIH
+				origin = this
+				state = s:STATE_SICHUAN.region_state:CHI
+
+				on_created = {
+					warlord_setup_effect = yes
+					set_variable = warlord_state
+				}
+			}
+			c:SIH = { save_scope_as = scope_SIH }
+			if = {
+				limit = { exists = s:STATE_QINGHAI.region_state:CHI }
+				s:STATE_QINGHAI.region_state:CHI = { set_state_owner = c:SIH }
+			}
+		}
+
+		if = {
+			limit = { exists = s:STATE_SHANDONG.region_state:CHI }
+			create_country = {
+				tag = SHA
+				origin = this
+				state = s:STATE_SHANDONG.region_state:CHI
+
+				on_created = {
+					warlord_setup_effect = yes
+					set_variable = warlord_state
+				}
+			}
+			c:SHA = { save_scope_as = scope_SHA }
+		}
+
+		if = {
+			limit = { exists = s:STATE_NINGXIA.region_state:CHI }
+			create_country = {
+				tag = XIB
+				origin = this
+				state = s:STATE_NINGXIA.region_state:CHI
+
+				on_created = {
+					warlord_setup_effect = yes
+					set_variable = warlord_state
+				}
+			}
+			c:XIB = { save_scope_as = scope_XIB }
+			if = {
+				limit = { exists = s:STATE_GANSU.region_state:CHI }
+				s:STATE_GANSU.region_state:CHI = { set_state_owner = c:XIB }
+			}
+			if = {
+				limit = { exists = s:STATE_ALXA.region_state:CHI }
+				s:STATE_ALXA.region_state:CHI = { set_state_owner = c:XIB }
+			}
+		}
+
+		if = {
+			limit = { exists = s:STATE_ULIASTAI.region_state:CHI }
+			create_country = {
+				tag = MGL
+				origin = this
+				state = s:STATE_ULIASTAI.region_state:CHI
+
+				on_created = {
+					warlord_setup_effect = yes
+				}
+			}
+			c:MGL = { save_scope_as = scope_MGL }
+			if = {
+				limit = { exists = s:STATE_URGA.region_state:CHI }
+				s:STATE_URGA.region_state:CHI = { set_state_owner = c:MGL }
+			}
+		}
+
+		if = {
+			limit = { exists = s:STATE_TUVA.region_state:CHI }
+			create_country = {
+				tag = TUV
+				origin = this
+				state = s:STATE_TUVA.region_state:CHI
+
+				on_created = {
+					warlord_setup_effect = yes
+					set_variable = warlord_state
+				}
+			}
+			c:TUV = { save_scope_as = scope_TUV }
+		}
+		
+		if = {
+			limit = { exists = s:STATE_FORMOSA.region_state:CHI }
+			create_country = {  
+				tag = FRS
+				origin = this
+				state = s:STATE_FORMOSA.region_state:CHI
+
+				on_created = {
+					warlord_setup_effect = yes
+					set_variable = warlord_state
+				}
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_TOMSK.region_state:CHI }
+			create_country = {  
+				tag = SIB
+				origin = this
+				state = s:STATE_TOMSK.region_state:CHI
+
+				on_created = {
+					warlord_setup_effect = yes
+					set_variable = warlord_state
+				}
+			}
+		}
+		
+		if = { #Отдаёт Киргизам что они заслужили
+			limit = { exists = s:STATE_KIRGHIZIA.region_state:CHI }
+
+			if = {
+				limit = { exists = s:STATE_KIRGHIZIA.region_state:CHI }
+				s:STATE_KIRGHIZIA.region_state:CHI = { set_state_owner = c:KOK }
+			}
+		}
+		
+		if = { #Отдаёт Казахам кусок территории
+			limit = { exists = s:STATE_JETISY.region_state:CHI }
+
+			if = {
+				limit = { exists = s:STATE_JETISY.region_state:CHI }
+				s:STATE_JETISY.region_state:CHI = { set_state_owner = c:OZH }
+			}
+		}
+
+		every_subject_or_below = {
+			make_independent = yes
+		}
+    }
+	
+	
+    option = {
+		default_option = yes
+		name = warlord_china_events.100.a
+	}
+
+	option = {
+		name = warlord_china_events.100.q
+		trigger = {
+			exists = c:HNA
+			is_player = yes
+		}
+		play_as = c:HNA
+	}
+
+	option = {
+		name = warlord_china_events.100.u
+		play_as = c:GNG
+	}
+
+	option = {
+		name = warlord_china_events.100.c
+		trigger = {
+			exists = c:AHU
+			is_player = yes
+		}
+		play_as = c:AHU
+	}
+
+	option = {
+		name = warlord_china_events.100.r
+		trigger = {
+			exists = c:ZHI
+			is_player = yes
+		}
+		play_as = c:ZHI
+	}
+	
+	option = {
+		name = warlord_china_events.100.e
+		trigger = {
+			exists = c:MCH
+			is_player = yes
+		}
+		play_as = c:MCH
+	}
+	
+	option = {
+		name = warlord_china_events.100.p
+		trigger = {
+			exists = c:SHN
+			is_player = yes
+		}
+		play_as = c:SHN
+	}
+	
+	option = {
+		name = warlord_china_events.100.j
+		trigger = {
+			exists = c:XIN
+			is_player = yes
+		}
+		play_as = c:XIN
+	}
+	
+	option = {
+		name = warlord_china_events.100.g
+		trigger = {
+			exists = c:YUN
+			is_player = yes
+		}
+		play_as = c:YUN
+	}
+	
+	option = {
+		name = warlord_china_events.100.tt
+		trigger = {
+			exists = c:GUI
+			is_player = yes
+		}
+		play_as = c:GUI
+	}
+	
+	option = {
+		name = warlord_china_events.100.l
+		trigger = {
+			exists = c:YUE
+			is_player = yes
+		}
+		play_as = c:YUE
+	}
+	
+	option = {
+		name = warlord_china_events.100.m
+		trigger = {
+			exists = c:SIH
+			is_player = yes
+		}
+		play_as = c:SIH
+	}
+	
+	option = {
+		name = warlord_china_events.100.o
+		trigger = {
+			exists = c:SHA
+			is_player = yes
+		}
+		play_as = c:SHA
+	}
+	
+	option = {
+		name = warlord_china_events.100.h
+		trigger = {
+			exists = c:XIB
+			is_player = yes
+		}
+		play_as = c:XIB
+	}
+	
+	option = {
+		name = warlord_china_events.100.w
+		trigger = {
+			exists = c:MGL
+			is_player = yes
+		}
+		play_as = c:MGL
+	}
+	
+	option = {
+		name = warlord_china_events.100.z
+		trigger = {
+			exists = c:TUV
+			is_player = yes
+		}
+		play_as = c:TUV
+	}
+	
+    option = {
+		name = warlord_china_events.100.zz
+		trigger = {
+			exists = c:FRS
+			is_player = yes
+		}
+		play_as = c:FRS
+	}
+	
+	option = {
+		name = warlord_china_events.100.zzz
+		trigger = {
+			exists = c:SIB
+			is_player = yes
+		}
+		play_as = c:SIB
+	}
+
+}
+
+
+
+
+
+

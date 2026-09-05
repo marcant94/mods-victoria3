@@ -1,0 +1,16 @@
+﻿l_english:
+ bic_backward_events.100.tt:0 "British Indian Company's return to the Middle Ages"
+ bic_backward_events.100.dd:0 "British Indian Company's return to the Middle Ages"
+ bic_backward_events.100.ff:0 "Bye British Indian Company"
+ bic_backward_events.100.aa:0 "We can rebuild it, we have the technology!"
+ bic_backward_events.100.a:0 "Back to the past..."
+
+ bic_backward_decision:0 "The backward of British Indian Company"
+ bic_backward_decision_desc:0 "backward British Indian Company in 1 click"
+ 
+ bic_backward_event.2.t:0 "The decision to backward British Indian Company"
+ bic_backward_event.2.d:0 "Start the backward of British Indian Company?"
+ bic_backward_event.2.ff:0 "With the push of a single button, you decide the fate of this country..."
+ bic_backward_event.2.a:0 "Yes, do it"
+ bic_backward_event.2.x:0 "No (hide decision and NOT backward this country)"
+ 

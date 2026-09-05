@@ -1,0 +1,3 @@
+NAI = {
+	PLAY_WITH_ACTION_NAME = "play_with"
+}

@@ -1,0 +1,5 @@
+﻿STATES = {
+	s:STATE_ALTO_PARAGUAY = {
+		add_claim = c:PRG
+	}
+}

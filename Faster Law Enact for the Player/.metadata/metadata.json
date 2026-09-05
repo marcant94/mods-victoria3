@@ -1,0 +1,12 @@
+{
+    "name": "Faster Law Enact for the Player",
+    "id": "3085596942",
+    "version": "9.0",
+    "supported_game_version": "",
+    "short_description": "Faster Law Enact for the Player",
+    "tags": ["Balance", "Diplomacy", "Fixes", "Gameplay", "Utilities"],
+    "relationships": [],
+    "game_custom_data": {
+        "multiplayer_synchronized": false
+    }
+}

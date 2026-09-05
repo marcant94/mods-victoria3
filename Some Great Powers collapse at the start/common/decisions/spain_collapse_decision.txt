@@ -1,0 +1,25 @@
+﻿spain_collapse_decision = {
+	is_shown = {
+		is_player = yes
+		exists = c:SPA
+		NOT = { has_global_variable = spain_collapse_var }
+	}
+
+	possible = {
+        always = yes
+		exists = c:SPA
+		NOT = { has_global_variable = spain_collapse_var }
+	}
+
+	when_taken = {
+	
+		trigger_event = {
+			id = spainwarlord_deci.2
+			popup = yes
+		}
+	}
+
+	ai_chance = {
+		base = 0
+	}
+}

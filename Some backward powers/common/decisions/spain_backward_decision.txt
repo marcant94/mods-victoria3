@@ -1,0 +1,53 @@
+﻿spain_backward_decision = {
+	is_shown = {
+		is_player = yes
+		exists = c:SPA
+		NOT = { this = c:SPA }
+		NOT = { has_global_variable = spain_hide_backward_var }
+		OR {
+			NOT = {
+				c:SPA = { has_law = law_type:law_ethnostate }
+			}
+			NOT = {
+				c:SPA = { has_law = law_type:law_isolationism }
+			}
+			NOT = {
+				c:SPA = { has_law = law_type:law_hereditary_bureaucrats }
+			}
+			NOT = {
+				c:SPA = { has_law = law_type:law_peasant_levies }
+			}
+			NOT = {
+				c:SPA = { has_law = law_type:law_consumption_based_taxation }
+			}
+			NOT = {
+				c:SPA = { has_law = law_type:law_serfdom }
+			}
+			NOT = {
+				c:SPA = { has_law = law_type:law_closed_borders }
+			}
+			NOT = {
+				c:SPA = { has_law = law_type:law_local_police }
+			}
+		}
+	}
+
+	possible = {
+        always = yes
+		exists = c:SPA
+		NOT = { this = c:SPA }
+		NOT = { has_global_variable = spain_hide_backward_var }
+	}
+
+	when_taken = {
+	
+		trigger_event = {
+			id = spainbackward_deci.2
+			popup = yes
+		}
+	}
+
+	ai_chance = {
+		base = 0
+	}
+}

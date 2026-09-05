@@ -1,0 +1,622 @@
+﻿namespace = russia_warlord_events
+
+russia_warlord_events.100 = { 
+	type = country_event
+	placement = c:RUS
+	duration = 1
+
+	title = russia_warlord_events.100.tt
+	desc = russia_warlord_events.100.dd
+	flavor = russia_warlord_events.100.ff
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_armored_train.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/armored_train"
+
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+
+	trigger = {
+	    #NOT = { has_global_variable = russia_collapse_var }
+	    #this = c:RUS
+		#exist = c:RUS
+	}
+
+	immediate = {
+		set_global_variable = russia_collapse_var
+		
+		if = {
+			limit = { exists = s:STATE_GREATER_CAUCASUS.region_state:RUS }
+			create_country = {
+				tag = GEO
+				origin = this
+				state = s:STATE_GREATER_CAUCASUS.region_state:RUS
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_ARMENIA.region_state:RUS }
+			
+			#Армения существует
+			if = { limit = { exists = c:ARM } 
+			     s:STATE_ARMENIA.region_state:RUS = { set_state_owner = c:ARM }
+			     }
+			   
+			#Армения не существует
+			if = { 
+			 limit = { NOT = { exists = c:ARM } }
+             create_country = {
+				tag = ARM
+				origin = this
+				state = s:STATE_ARMENIA.region_state:RUS
+			 }
+			}
+
+            if = {
+				limit = { exists = s:STATE_KARS.region_state:RUS }
+				s:STATE_KARS.region_state:RUS = { set_state_owner = c:ARM }
+			 }			
+			
+		}
+		
+		if = {
+			limit = { exists = s:STATE_DAGESTAN.region_state:RUS }
+			create_country = {
+				tag = DAG
+				origin = this
+				state = s:STATE_DAGESTAN.region_state:RUS
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_AZERBAIJAN.region_state:RUS }
+			create_country = {
+				tag = AZB
+				origin = this
+				state = s:STATE_AZERBAIJAN.region_state:RUS
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_LATVIA.region_state:RUS }
+			create_country = {
+				tag = LAT
+				origin = this
+				state = s:STATE_LATVIA.region_state:RUS
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_ESTONIA.region_state:RUS }
+			create_country = {
+				tag = EST
+				origin = this
+				state = s:STATE_ESTONIA.region_state:RUS
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_LITHUANIA.region_state:RUS }
+			create_country = {
+				tag = LIT
+				origin = this
+				state = s:STATE_LITHUANIA.region_state:RUS
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_CRIMEA.region_state:RUS }
+			create_country = {
+				tag = CRI
+				origin = this
+				state = s:STATE_CRIMEA.region_state:RUS
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_BREST.region_state:RUS }
+			create_country = {
+				tag = BYE
+				origin = this
+				state = s:STATE_BREST.region_state:RUS
+			}
+			if = {
+				limit = { exists = s:STATE_MINSK.region_state:RUS }
+				s:STATE_MINSK.region_state:RUS = { set_state_owner = c:BYE }
+			}
+			if = {
+				limit = { exists = s:STATE_ORSHA.region_state:RUS }
+				s:STATE_ORSHA.region_state:RUS = { set_state_owner = c:BYE }
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_OKHOTSK.region_state:RUS }
+			create_country = {
+				tag = TNS
+				origin = this
+				state = s:STATE_OKHOTSK.region_state:RUS
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_ASTRAKHAN.region_state:RUS }
+			create_country = {
+				tag = KLM
+				origin = this
+				state = s:STATE_ASTRAKHAN.region_state:RUS
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_KUBAN.region_state:RUS }
+			create_country = {
+				tag = NCA
+				origin = this
+				state = s:STATE_KUBAN.region_state:RUS
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_ROSTOV.region_state:RUS }
+			create_country = {
+				tag = DON
+				origin = this
+				state = s:STATE_ROSTOV.region_state:RUS
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_YAKUTSK.region_state:RUS }
+			create_country = {
+				tag = YAK
+				origin = this
+				state = s:STATE_YAKUTSK.region_state:RUS
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_MAZOVIA.region_state:RUS }
+			create_country = {
+				tag = POL
+				origin = this
+				state = s:STATE_MAZOVIA.region_state:RUS
+			}
+			if = {
+				limit = { exists = s:STATE_GREATER_POLAND.region_state:RUS }
+				s:STATE_GREATER_POLAND.region_state:RUS = { set_state_owner = c:POL }
+			}
+			if = {
+				limit = { exists = s:STATE_LESSER_POLAND.region_state:RUS }
+				s:STATE_LESSER_POLAND.region_state:RUS = { set_state_owner = c:POL }
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_BESSARABIA.region_state:RUS }
+			
+			#Румыния существует
+			if = { limit = { exists = c:ROM } 
+			     s:STATE_BESSARABIA.region_state:RUS = { set_state_owner = c:ROM }
+			     }
+			   
+			#Румыния не существует
+			if = { 
+			 limit = { NOT = { exists = c:ROM } }
+             create_country = {
+				tag = ROM
+				origin = this
+				state = s:STATE_BESSARABIA.region_state:RUS
+			}
+			}   
+			
+		}
+		
+		if = {
+			limit = { exists = s:STATE_TARTARIA.region_state:RUS }
+			create_country = {
+				tag = IUS
+				origin = this
+				state = s:STATE_TARTARIA.region_state:RUS
+			}
+			if = {
+				limit = { exists = s:STATE_SAMARA.region_state:RUS }
+				s:STATE_SAMARA.region_state:RUS = { set_state_owner = c:IUS }
+			}
+			if = {
+				limit = { exists = s:STATE_KAZAN.region_state:RUS }
+				s:STATE_KAZAN.region_state:RUS = { set_state_owner = c:IUS }
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_KIEV.region_state:RUS }
+			
+			#Украина существует
+			if = { limit = { exists = c:UKR } 
+			     s:STATE_KIEV.region_state:RUS = { set_state_owner = c:UKR }
+			     }
+			   
+			#Украина не существует
+			if = { 
+			 limit = { NOT = { exists = c:UKR } }
+             create_country = {
+				tag = UKR
+				origin = this
+				state = s:STATE_KIEV.region_state:RUS
+			 }
+			}
+
+            if = {
+				limit = { exists = s:STATE_VOLHYNIA.region_state:RUS }
+				s:STATE_VOLHYNIA.region_state:RUS = { set_state_owner = c:UKR }
+			}
+			if = {
+				limit = { exists = s:STATE_LUHANSK.region_state:RUS }
+				s:STATE_LUHANSK.region_state:RUS = { set_state_owner = c:UKR }
+			}
+			if = {
+				limit = { exists = s:STATE_KURSK.region_state:RUS }
+				s:STATE_KURSK.region_state:RUS = { set_state_owner = c:UKR }
+			}
+			if = {
+				limit = { exists = s:STATE_CHERSON.region_state:RUS }
+				s:STATE_CHERSON.region_state:RUS = { set_state_owner = c:UKR }
+			}			
+			
+		}
+		
+		if = {
+			limit = { exists = s:STATE_DOBRUDJA.region_state:RUS }
+			
+			#Болгария существует
+			if = { limit = { exists = c:BUL } 
+			     s:STATE_DOBRUDJA.region_state:RUS = { set_state_owner = c:BUL }
+			     }
+			   
+			#Болгрия не существует
+			if = { 
+			 limit = { NOT = { exists = c:BUL } }
+             create_country = {
+				tag = BUL
+				origin = this
+				state = s:STATE_DOBRUDJA.region_state:RUS
+			}
+			}   
+			
+		}
+		
+		if = {
+			limit = { exists = s:STATE_CHUKOTKA.region_state:RUS }
+			create_country = {
+				tag = NNV
+				origin = this
+				state = s:STATE_CHUKOTKA.region_state:RUS
+			}
+			if = {
+				limit = { exists = s:STATE_ALASKA.region_state:RUS }
+				s:STATE_ALASKA.region_state:RUS = { set_state_owner = c:NNV }
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_KAMCHATKA.region_state:RUS }
+			create_country = {
+				tag = FER
+				origin = this
+				state = s:STATE_KAMCHATKA.region_state:RUS
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_TRANS_BAIKAL.region_state:RUS }
+			create_country = {
+				tag = SIB
+				origin = this
+				state = s:STATE_TRANS_BAIKAL.region_state:RUS
+			}
+			if = {
+				limit = { exists = s:STATE_IRKUTSK.region_state:RUS }
+				s:STATE_IRKUTSK.region_state:RUS = { set_state_owner = c:SIB }
+			}
+			if = {
+				limit = { exists = s:STATE_UPPER_YENISEYSK.region_state:RUS }
+				s:STATE_UPPER_YENISEYSK.region_state:RUS = { set_state_owner = c:SIB }
+			}
+			if = {
+				limit = { exists = s:STATE_TOMSK.region_state:RUS }
+				s:STATE_TOMSK.region_state:RUS = { set_state_owner = c:SIB }
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_PERM.region_state:RUS }
+			create_country = {
+				tag = PRM
+				origin = this
+				state = s:STATE_PERM.region_state:RUS
+			}
+			if = {
+				limit = { exists = s:STATE_EAST_KARELIA.region_state:RUS }
+				s:STATE_EAST_KARELIA.region_state:RUS = { set_state_owner = c:PRM }
+			}
+			if = {
+				limit = { exists = s:STATE_ARKHANGELSK.region_state:RUS }
+				s:STATE_ARKHANGELSK.region_state:RUS = { set_state_owner = c:PRM }
+			}
+			if = {
+				limit = { exists = s:STATE_NENETSIA.region_state:RUS }
+				s:STATE_NENETSIA.region_state:RUS = { set_state_owner = c:PRM }
+			}
+			if = {
+				limit = { exists = s:STATE_URAL.region_state:RUS }
+				s:STATE_URAL.region_state:RUS = { set_state_owner = c:PRM }
+			}
+			if = {
+				limit = { exists = s:STATE_OB.region_state:RUS }
+				s:STATE_OB.region_state:RUS = { set_state_owner = c:PRM }
+			}
+			if = {
+				limit = { exists = s:STATE_TOBOLSK.region_state:RUS }
+				s:STATE_TOBOLSK.region_state:RUS = { set_state_owner = c:PRM }
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_URALSK.region_state:RUS }
+			create_country = {
+				tag = TRH
+				origin = this
+				state = s:STATE_URALSK.region_state:RUS
+			}
+		}
+		
+		if = { #Отдаём земли казахам
+				limit = { exists = s:STATE_AKMOLINSK.region_state:RUS }
+				s:STATE_AKMOLINSK.region_state:RUS = { set_state_owner = c:OZH }
+			}	
+		if = { 
+				limit = { exists = s:STATE_SEMIRECHE.region_state:RUS }
+				s:STATE_SEMIRECHE.region_state:RUS = { set_state_owner = c:OZH }
+			}
+			
+		
+		s:STATE_TURKMENIA = { #Отдаём Казахам сломанные параходами провинции
+            set_owner_of_provinces = {
+                country = c:OZH
+                provinces = { x41E1DD xF2637F x705C49 x10826C x46471E xABED3D }
+            }
+        }
+
+		every_subject_or_below = {
+			make_independent = yes
+		}
+
+
+	}
+	
+	option = {
+		default_option = yes
+		name = russia_warlord_events.100.a
+	}
+
+	option = {
+		name = russia_warlord_events.100.b
+		trigger = {
+			exists = c:GEO
+			is_player = yes
+		}
+		play_as = c:GEO
+	}
+	
+	option = {
+		name = russia_warlord_events.100.c
+		trigger = {
+			exists = c:ARM
+			is_player = yes
+		}
+		play_as = c:ARM
+	}
+	
+	option = {
+		name = russia_warlord_events.100.d
+		trigger = {
+			exists = c:LAT
+			is_player = yes
+		}
+		play_as = c:LAT
+	}
+	
+	option = {
+		name = russia_warlord_events.100.e
+		trigger = {
+			exists = c:DAG
+			is_player = yes
+		}
+		play_as = c:DAG
+	}
+	
+	option = {
+		name = russia_warlord_events.100.f
+		trigger = {
+			exists = c:AZB
+			is_player = yes
+		}
+		play_as = c:AZB
+	}
+	
+	option = {
+		name = russia_warlord_events.100.g
+		trigger = {
+			exists = c:EST
+			is_player = yes
+		}
+		play_as = c:EST
+	}
+	
+	option = {
+		name = russia_warlord_events.100.h
+		trigger = {
+			exists = c:LIT 
+			is_player = yes
+		}
+		play_as = c:LIT 
+	}
+	
+	option = {
+		name = russia_warlord_events.100.i
+		trigger = {
+			exists = c:CRI
+			is_player = yes
+		}
+		play_as = c:CRI 
+	}
+	
+	option = {
+		name = russia_warlord_events.100.j
+		trigger = {
+			exists = c:BYE
+			is_player = yes
+		}
+		play_as = c:BYE
+	}
+	
+	option = {
+		name = russia_warlord_events.100.l
+		trigger = {
+			exists = c:KLM
+			is_player = yes
+		}
+		play_as = c:KLM
+	}
+	
+	option = {
+		name = russia_warlord_events.100.m
+		trigger = {
+			exists = c:NCA
+			is_player = yes
+		}
+		play_as = c:NCA
+	}
+	
+	option = {
+		name = russia_warlord_events.100.n
+		trigger = {
+			exists = c:DON
+			is_player = yes
+		}
+		play_as = c:DON
+	}
+	
+	option = {
+		name = russia_warlord_events.100.o
+		trigger = {
+			exists = c:YAK
+			is_player = yes
+		}
+		play_as = c:YAK
+	}
+	
+	option = {
+		name = russia_warlord_events.100.p
+		trigger = {
+			exists = c:POL
+			is_player = yes
+		}
+		play_as = c:POL
+	}
+	
+	option = {
+		name = russia_warlord_events.100.q
+		trigger = {
+			exists = c:ROM
+			is_player = yes
+		}
+		play_as = c:ROM
+	}
+	
+	option = {
+		name = russia_warlord_events.100.r
+		trigger = {
+			exists = c:IUS
+			is_player = yes
+		}
+		play_as = c:IUS
+	}
+	
+	option = {
+		name = russia_warlord_events.100.s
+		trigger = {
+			exists = c:UKR
+			is_player = yes
+		}
+		play_as = c:UKR
+	}
+	
+	option = {
+		name = russia_warlord_events.100.t
+		trigger = {
+			exists = c:BUL
+			is_player = yes
+		}
+		play_as = c:BUL
+	}
+	
+	option = {
+		name = russia_warlord_events.100.v
+		trigger = {
+			exists = c:SIB
+			is_player = yes
+		}
+		play_as = c:SIB
+	}
+	
+	option = {
+		name = russia_warlord_events.100.w
+		trigger = {
+			exists = c:PRM
+			is_player = yes
+		}
+		play_as = c:PRM
+	}
+	
+	option = {
+		name = russia_warlord_events.100.x
+		trigger = {
+			exists = c:TRH
+			is_player = yes
+		}
+		play_as = c:TRH
+	}
+	
+    option = {
+		name = russia_warlord_events.100.u
+		trigger = {
+			exists = c:FER
+			is_player = yes
+		}
+		play_as = c:FER
+	}
+
+    option = {
+		name = russia_warlord_events.100.k
+		trigger = {
+			exists = c:TNS 
+			is_player = yes
+		}
+		play_as = c:TNS 
+	}
+	
+	option = {
+		name = russia_warlord_events.100.z
+		trigger = {
+			exists = c:NNV 
+			is_player = yes
+		}
+		play_as = c:NNV
+	}
+	
+	
+}

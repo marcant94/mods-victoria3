@@ -1,0 +1,16 @@
+﻿l_spanish:
+ france_backward_events.100.tt:0 "La vuelta de Francia a la edad media"
+ france_backward_events.100.dd:0 "La vuelta de Francia a la edad media"
+ france_backward_events.100.ff:0 "Adiós Francia"
+ france_backward_events.100.aa:0 "Podemos reconstruirlo, tenemos la tecnología"
+ france_backward_events.100.a:0 "Volver al pasado…"
+
+ france_backward_decision:0 "La vuelta de Francia a la edad media"
+ france_backward_decision_desc:0 "Devolver a Francia a la edad media"
+ 
+ france_backward_event.2.t:0 "La decisión de retroceder Francia"
+ france_backward_event.2.d:0 "¿Iniciar la vuelta a la edad media de Francia?"
+ france_backward_event.2.ff:0 "Con solo pulsar un botón, decides el destino de este país..."
+ france_backward_event.2.a:0 "Sí, hazlo"
+ france_backward_event.2.x:0 "No (ocultar decisión y NO retroceder este país)"
+ 

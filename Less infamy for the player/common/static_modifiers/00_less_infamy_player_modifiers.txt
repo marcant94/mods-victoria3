@@ -1,0 +1,12 @@
+# All global modifiers are here.  They are applied from certain game-features.
+#
+# Effects are fully scriptable here.
+#these names can NOT be removed or changed, as the code uses them....
+
+less_infamy_player = {
+	# icon = gfx/interface/icons/infamy_icons/infamous.dds
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
+	
+	country_infamy_decay_mult = 2.0
+	country_infamy_generation_mult = -0.75
+}

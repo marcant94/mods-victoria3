@@ -1,0 +1,8 @@
+﻿l_english:
+  play_with:0 "Play with [TARGET_COUNTRY.GetName]"
+  play_with_action_name:0 "Play with [TARGET_COUNTRY.GetName]"
+  play_with_action_propose_name:0 "Play with [TARGET_COUNTRY.GetName]"
+  play_with_desc:3 "Play with [TARGET_COUNTRY.GetName]"
+  play_with_action_notification_name:0 "Play with [TARGET_COUNTRY.GetName]"
+  play_with_action_notification_desc:2 "Play with [TARGET_COUNTRY.GetName]"
+ 

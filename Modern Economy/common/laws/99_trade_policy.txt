@@ -1,0 +1,38 @@
+﻿# group = this is the law_group a law belongs to
+# icon = graphical icon shown in-game
+# modifier = {} modifier on country for having adopted this law
+
+law_cooperative_globalism = {
+	group = lawgroup_trade_policy
+
+	icon = "gfx/interface/icons/trade_icons/production.dds"
+
+	progressiveness = 50
+
+	disallowing_laws = {
+		law_command_economy
+	}
+
+	unlocking_technologies = {
+		stock_exchange
+		international_trade
+	}
+
+	modifier = {
+		state_tariff_import_add = 0.20
+		state_tariff_export_add = 0.20
+
+		state_subvention_export_add = 0.15
+		state_subvention_import_add = 0.15
+
+		country_leverage_resistance_mult = 0.15
+
+		state_trade_advantage_mult = 0.15
+		# state_import_advantage_mult = 0.10
+		# state_export_advantage_mult = 0.10
+	}
+
+	ai_enact_weight_modifier = {
+		value = 0
+	}
+}

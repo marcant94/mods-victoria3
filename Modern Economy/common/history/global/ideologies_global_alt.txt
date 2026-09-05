@@ -1,0 +1,30 @@
+GLOBAL = {
+	every_country = {
+		# Ideologías a favor de Economía Social de Mercado y Globalismo Cooperativo
+		ig:ig_trade_unions = {
+			add_ideology = ideology_social_market_supporter
+		}
+
+		ig:ig_intelligentsia = {
+			add_ideology = ideology_social_market_supporter
+		}
+
+		# Ideologías moderadas que apoyan ambas leyes
+		ig:ig_industrialists = {
+			add_ideology = ideology_market_globalist
+		}
+
+		ig:ig_petty_bourgeoisie = {
+			add_ideology = ideology_market_globalist
+		}
+
+		# Ideologías tradicionalistas que se oponen
+		ig:ig_landowners = {
+			add_ideology = ideology_protectionist_conservative
+		}
+
+		ig:ig_devout = {
+			add_ideology = ideology_protectionist_conservative
+		}
+	}
+}

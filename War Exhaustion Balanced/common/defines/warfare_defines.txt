@@ -1,0 +1,22 @@
+﻿NWar = {
+	# DEVASTATION_MAX = 100.0 # was 100.0
+	DEVASTATION_INCREASE_RATE = 0.25 # was 0.1 # Per day, scales with level of occupation
+	DEVASTATION_DECAY_RATE = -0.20 # was -0.1 # Per day, when there are no occupations
+	DEVASTATION_FROM_BATTLES = 0.05 # was 0.1 # For each battle
+
+	# WAR_EXHAUSTION_BASE = 0.25 # was 0.25
+	# WAR_EXHAUSTION_KIA_FACTOR = 5.0 # was 5.0 # Scaled by casualties compared to total manpower
+	# WAR_EXHAUSTION_KIA_BASE_MULTIPLIER = 0.25 # was 0.25	# War Exhaustion from casualties is always multiplied by at least this
+	# WAR_EXHAUSTION_KIA_BATTLES_LOST_MULTIPLIER = 0.75 	# was 0.75 # At 100% of battles lost by our side, War Exhaustion from casualties is further multiplied by this
+	# WAR_EXHAUSTION_CONTESTED_ENEMY_WARGOALS = 1.0 # was 1.0 
+
+	# AUTO_CAPITULATE_WAR_SUPPORT = -100 # was -100 # When war support is this low, the country will auto capitulate
+	# DAYS_BETWEEN_WAR_EXHAUSTION = 7 # was 7 # Every this many days war support will be reduced by the war exhaustion formula
+
+	# OCCUPATION_STATE_DEFENSIVE_BATTLE_VICTORY_SCORE = 50 # was 50 # How many occupation "points" each country receives after winning a defensive battle
+	
+	OCCUPATION_STATE_BASE_WEIGHT = 2.5 # was 1
+	OCCUPATION_STATE_POP_WEIGHT = 2.5 # was 1
+	OCCUPATION_STATE_INCORPORATED_WEIGHT = 25 # was 10
+	
+}

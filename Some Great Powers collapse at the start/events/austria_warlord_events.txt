@@ -1,0 +1,311 @@
+﻿namespace = austria_warlord_events
+
+austria_warlord_events.100 = { 
+	type = country_event
+	placement = c:AUS
+	duration = 1
+
+	title = austria_warlord_events.100.tt
+	desc = austria_warlord_events.100.dd
+	flavor = austria_warlord_events.100.ff
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_armored_train.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/armored_train"
+
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+
+	trigger = {
+	    #NOT = { has_global_variable = austria_collapse_var }
+	    #this = c:AUS
+		#exist = c:AUS
+	}
+
+	immediate = {
+		set_global_variable = austria_collapse_var
+		
+		if = {
+			limit = { exists = s:STATE_ISTRIA.region_state:AUS }
+			create_country = {
+				tag = TRE
+				origin = this
+				state = s:STATE_ISTRIA.region_state:AUS
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_LOMBARDY.region_state:AUS }
+			create_country = {
+				tag = LOM
+				origin = this
+				state = s:STATE_LOMBARDY.region_state:AUS
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_BOHEMIA.region_state:AUS }
+			create_country = {
+				tag = BOH
+				origin = this
+				state = s:STATE_BOHEMIA.region_state:AUS
+			}
+			if = {
+				limit = { exists = s:STATE_MORAVIA.region_state:AUS }
+				s:STATE_MORAVIA.region_state:AUS = { set_state_owner = c:BOH }
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_VENETIA.region_state:AUS }
+			create_country = {
+				tag = VEN
+				origin = this
+				state = s:STATE_VENETIA.region_state:AUS
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_SLOVENIA.region_state:AUS }
+			create_country = {
+				tag = SLO
+				origin = this
+				state = s:STATE_SLOVENIA.region_state:AUS
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_WEST_SLOVAKIA.region_state:AUS }
+			create_country = {
+				tag = SLV
+				origin = this
+				state = s:STATE_WEST_SLOVAKIA.region_state:AUS
+			}
+			if = {
+				limit = { exists = s:STATE_EAST_SLOVAKIA.region_state:AUS }
+				s:STATE_EAST_SLOVAKIA.region_state:AUS = { set_state_owner = c:SLV }
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_EAST_GALICIA.region_state:AUS }
+			
+			#Украина существует
+			if = { limit = { exists = c:UKR } 
+			     s:STATE_EAST_GALICIA.region_state:AUS = { set_state_owner = c:UKR }
+			     }
+			   
+			#Украина не существует
+			if = { 
+			 limit = { NOT = { exists = c:UKR } }
+             create_country = {
+				tag = UKR
+				origin = this
+				state = s:STATE_EAST_GALICIA.region_state:AUS
+			 }
+			}   
+			
+		}
+
+		
+		if = {
+			limit = { exists = s:STATE_WEST_GALICIA.region_state:AUS }
+			create_country = {
+				tag = GAL
+				origin = this
+				state = s:STATE_WEST_GALICIA.region_state:AUS
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_SOUTHERN_TRANSYLVANIA.region_state:AUS }
+			create_country = {
+				tag = TRS
+				origin = this
+				state = s:STATE_SOUTHERN_TRANSYLVANIA.region_state:AUS
+			}
+			if = {
+				limit = { exists = s:STATE_NORTHERN_TRANSYLVANIA.region_state:AUS }
+				s:STATE_NORTHERN_TRANSYLVANIA.region_state:AUS = { set_state_owner = c:TRS }
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_CENTRAL_HUNGARY.region_state:AUS }
+			create_country = {
+				tag = HUN
+				origin = this
+				state = s:STATE_CENTRAL_HUNGARY.region_state:AUS
+			}
+			if = {
+				limit = { exists = s:STATE_BEKES.region_state:AUS }
+				s:STATE_BEKES.region_state:AUS = { set_state_owner = c:HUN }
+			}
+			if = {
+				limit = { exists = s:STATE_TRANSDANUBIA.region_state:AUS }
+				s:STATE_TRANSDANUBIA.region_state:AUS = { set_state_owner = c:HUN }
+			}
+			if = {
+				limit = { exists = s:STATE_DELVIDEK.region_state:AUS }
+				s:STATE_DELVIDEK.region_state:AUS = { set_state_owner = c:HUN }
+			}
+			if = {
+				limit = { exists = s:STATE_BANAT.region_state:AUS }
+				s:STATE_BANAT.region_state:AUS = { set_state_owner = c:HUN }
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_MOLDAVIA.region_state:AUS }
+			
+			#Румыния существует
+			if = { limit = { exists = c:ROM } 
+			     s:STATE_MOLDAVIA.region_state:AUS = { set_state_owner = c:ROM }
+			     }
+			   
+			#Румыния не существует
+			if = { 
+			 limit = { NOT = { exists = c:ROM } }
+             create_country = {
+				tag = ROM
+				origin = this
+				state = s:STATE_MOLDAVIA.region_state:AUS
+			}
+			}   
+			
+		}
+		
+		if = {
+			limit = { exists = s:STATE_CROATIA.region_state:AUS }
+			create_country = {
+				tag = CRO
+				origin = this
+				state = s:STATE_CROATIA.region_state:AUS
+			}
+			if = {
+				limit = { exists = s:STATE_SLAVONIA.region_state:AUS }
+				s:STATE_SLAVONIA.region_state:AUS = { set_state_owner = c:CRO }
+			}
+			if = {
+				limit = { exists = s:STATE_DALMATIA.region_state:AUS }
+				s:STATE_DALMATIA.region_state:AUS = { set_state_owner = c:CRO }
+			}
+		}
+
+		every_subject_or_below = {
+			make_independent = yes
+		}
+
+
+	}
+	
+	option = {
+		default_option = yes
+		name = austria_warlord_events.100.aa
+	}
+	
+	option = {
+		name = austria_warlord_events.100.a
+		trigger = {
+			exists = c:HUN
+			is_player = yes
+		}
+		play_as = c:HUN
+	}
+	
+	option = {
+		name = austria_warlord_events.100.b
+		trigger = {
+			exists = c:BOH
+			is_player = yes
+		}
+		play_as = c:BOH
+	}
+	
+	option = {
+		name = austria_warlord_events.100.c
+		trigger = {
+			exists = c:SLV
+			is_player = yes
+		}
+		play_as = c:SLV
+	}
+	
+	option = {
+		name = austria_warlord_events.100.d
+		trigger = {
+			exists = c:CRO
+			is_player = yes
+		}
+		play_as = c:CRO
+	}
+	
+	option = {
+		name = austria_warlord_events.100.e
+		trigger = {
+			exists = c:ROM
+			is_player = yes
+		}
+		play_as = c:ROM
+	}
+	
+	option = {
+		name = austria_warlord_events.100.f
+		trigger = {
+			exists = c:TRS
+			is_player = yes
+		}
+		play_as = c:TRS
+	}
+
+    option = {
+		name = austria_warlord_events.100.g
+		trigger = {
+			exists = c:GAL
+			is_player = yes
+		}
+		play_as = c:GAL
+	}
+	
+	option = {
+		name = austria_warlord_events.100.h
+		trigger = {
+			exists = c:SLO
+			is_player = yes
+		}
+		play_as = c:SLO
+	}
+	
+	option = {
+		name = austria_warlord_events.100.i
+		trigger = {
+			exists = c:VEN
+			is_player = yes
+		}
+		play_as = c:VEN
+	}
+	
+	option = {
+		name = austria_warlord_events.100.j
+		trigger = {
+			exists = c:LOM
+			is_player = yes
+		}
+		play_as = c:LOM
+	}
+	
+	option = {
+		name = austria_warlord_events.100.k
+		trigger = {
+			exists = c:TRE
+			is_player = yes
+		}
+		play_as = c:TRE
+	}
+
+}
+
+
+

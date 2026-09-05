@@ -1,0 +1,35 @@
+COUNTRIES = {
+
+	c:ARG ?= {
+		effect_starting_technology_tier_2_tech = yes
+	}
+
+	c:BOL ?= {
+		effect_starting_technology_tier_2_tech = yes
+	}
+
+	c:CHL ?= {
+		effect_starting_technology_tier_2_tech = yes
+	}
+
+	c:CLM ?= {
+		effect_starting_technology_tier_2_tech = yes
+	}
+
+	c:ECU ?= {
+		effect_starting_technology_tier_2_tech = yes
+	}
+
+	c:PRG ?= {
+		effect_starting_technology_tier_2_tech = yes
+	}
+
+	c:URU ?= {
+		effect_starting_technology_tier_2_tech = yes
+	}
+
+	c:VNZ ?= {
+		effect_starting_technology_tier_2_tech = yes
+	}
+
+}

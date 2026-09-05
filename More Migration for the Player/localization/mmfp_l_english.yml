@@ -1,0 +1,9 @@
+﻿l_english:
+  enable_more_migration: "Enable: More migration for the Player"
+  enable_more_migration_desc: "The player receives extra migration"
+  disable_more_migration: "Disable: More migration for the Player"
+  disable_more_migration_desc: "The player stops receiving extra migration"
+  mmfp_migration_extra:0 "Player migration Bonus"
+
+
+  

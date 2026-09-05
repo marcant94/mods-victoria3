@@ -1,0 +1,89 @@
+﻿
+# Spain default: hsv360{ 38  97  83 }
+
+fascist_spain = {
+	color = "orange"
+
+	possible = {
+		exists = c:SPA
+		THIS = c:SPA
+		coa_dictatorship_trigger = yes
+	}
+}
+
+spain_technate = {
+	color = { 230 123 17 }
+
+	possible = {
+		exists = c:SPA
+		THIS = c:SPA
+		has_law = law_type:law_technocracy
+	}
+}
+
+spain_republican = {
+	# color = rgb { 212 136 6 }		# el amarillo inicial con RGB
+	# color = rgb { 141 84 158 }	# morado republicano con RGB
+	# color = { 189 145 19 }			# oro
+	# color = "orange"
+	color = { 230 123 17 }
+
+	possible = {
+		exists = c:SPA
+		THIS = c:SPA
+		OR = {
+			has_law = law_type:law_parliamentary_republic
+			has_law = law_type:law_presidential_republic
+		}
+	}
+}
+
+
+spain_communist = {
+	color = "communist_spain_pink" #  hsv360 { 353 76 71 }
+
+	possible = {
+		exists = c:SPA
+		THIS = c:SPA
+		has_law = law_type:law_council_republic
+	}
+}
+
+
+
+fascist_iberia = {
+	color = "orange"
+
+	possible = {
+		exists = c:IBE
+		THIS = c:IBE
+		coa_dictatorship_trigger = yes
+	}
+}
+
+iberia_republican = {
+	# color = rgb { 212 136 6 }		# el amarillo inicial con RGB
+	# color = rgb { 141 84 158 }	# morado republicano con RGB
+	# color = { 189 145 19 }			# oro
+	color = { 230 123 17 }
+
+
+	possible = {
+		exists = c:IBE
+		THIS = c:IBE
+		OR = {
+			has_law = law_type:law_parliamentary_republic
+			has_law = law_type:law_presidential_republic
+		}
+	}
+}
+
+iberia_communist = {
+	color = "communist_spain_pink" #  hsv360 { 353 76 71 }
+
+	possible = {
+		exists = c:IBE
+		THIS = c:IBE
+		has_law = law_type:law_council_republic
+	}
+}

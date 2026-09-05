@@ -1,0 +1,27 @@
+STATES = {
+	# Filipinas reivindica el resto del archipiélago
+    s:STATE_MINDANAO = {
+		add_claim = c:PHI
+	}
+	
+    s:STATE_LUZON = {
+		add_claim = c:PHI
+	}
+	
+    s:STATE_VISAYAS = {
+		add_claim = c:PHI
+	}
+
+
+
+	# España llego a tener presencia en micronesia
+	# Solo tuvo presencia en la micronesia occidental
+	s:STATE_WEST_MICRONESIA = {
+		add_claim = c:SPA
+	}
+
+	# s:STATE_EAST_MICRONESIA = {
+	# 	add_claim = c:SPA
+	# }
+
+}

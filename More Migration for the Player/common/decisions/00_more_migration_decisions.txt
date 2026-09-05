@@ -1,0 +1,45 @@
+﻿enable_more_migration = {
+	is_shown = {
+		is_player = yes
+		NOT = { has_global_variable = hide_mods_decisions }
+		NOT = {
+			has_modifier = mmfp_migration_extra
+		}
+	}
+
+	possible = {
+		is_player = yes
+		NOT = {
+			has_modifier = mmfp_migration_extra
+		}
+	}
+
+	when_taken = {
+		add_modifier = {
+			name = mmfp_migration_extra
+		}
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+disable_more_migration = {
+	is_shown = {
+		has_modifier = mmfp_migration_extra
+		NOT = { has_global_variable = hide_mods_decisions }
+	}
+
+	possible = {
+		has_modifier = mmfp_migration_extra
+	}
+
+	when_taken = {
+		remove_modifier = mmfp_migration_extra
+	}
+
+	ai_chance = {
+		value = 100
+	}
+}

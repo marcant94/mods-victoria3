@@ -1,0 +1,13 @@
+{
+  "name" : "More frequent agitators",
+  "id" : "3130203966",
+  "version" : "2.1",
+  "supported_game_version" : "1.13.*",
+  "description" : "A mod that changes the agitator interaction cooldowns from 5 years to 6 months",
+  "short_description" : "A mod that changes the agitator interaction cooldowns from 5 years to 6 months",
+  "tags" : ["Balance","Cultures And Religions","Fixes","Gameplay","Interest Groups"],
+  "relationships" : [],
+  "game_custom_data" : {
+    "multiplayer_synchronized" : true
+  }
+}

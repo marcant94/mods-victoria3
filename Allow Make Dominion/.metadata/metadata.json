@@ -1,0 +1,12 @@
+{
+  "name" : "Allow Make Dominion",
+  "id" : "3492208358",
+  "version" : "2.0",
+  "supported_game_version" : "",
+  "short_description" : "Allow make dominion like protectorate",
+  "tags" : ["Balance", "Expansion", "Gameplay", "Utilities"],
+  "relationships" : [],
+  "game_custom_data" : {
+    "multiplayer_synchronized" : true
+  }
+}

@@ -1,0 +1,9 @@
+﻿l_english:
+  enable_efficient_bureaucracy: "Enable: Efficient Bureaucracy for the Player"
+  enable_efficient_bureaucracy_desc: "The player receives extra bureaucracy"
+  disable_efficient_bureaucracy: "Disable: Efficient Bureaucracy for the Player"
+  disable_efficient_bureaucracy_desc: "The player stops receiving extra bureaucracy"
+  ebfp_bureaucracy_extra:0 "Player Bureaucracy Bonus"
+
+
+  

@@ -1,0 +1,26 @@
+﻿l_spanish:
+ ottomans_backward_events.100.tt:0 "El Imperio Otomano retrocede al inicio"
+ ottomans_backward_events.100.dd:0 "La vuelta a la edad media del Imperio Otomano"
+ ottomans_backward_events.100.ff:0 "Aceleraremos ligeramente los acontecimientos de este mundo. Dejemos que Egipto lleve a los otomanos al estancamiento en el parche actual del juego... los ayudaremos y les arrancaremos el máximo número posible de países y pueblos."
+ ottomans_backward_events.100.aa:0 "Estoy harto de esto"
+ ottomans_backward_events.100.b:0 "Jugar como Bulgaria"
+ ottomans_backward_events.100.c:0 "Jugar como Yugoslavia"
+ ottomans_backward_events.100.d:0 "Jugar como Armenia"
+ ottomans_backward_events.100.e:0 "Jugar como Siria"
+ ottomans_backward_events.100.f:0 "Jugar como Iraq"
+ ottomans_backward_events.100.g:0 "Jugar como Kurdistan"
+ ottomans_backward_events.100.h:0 "Jugar como Assyria"
+ ottomans_backward_events.100.i:0 "Jugar como Albania"
+ ottomans_backward_events.100.j:0 "Jugar como Bosnia y Herzegovina"
+ ottomans_backward_events.100.k:0 "Jugar como Chipre"
+ ottomans_backward_events.100.l:0 "Jugar como Rumania"
+ 
+ ottomans_backward_decision:0 "La vuelta a la edad media del Imperio Otomano"
+ ottomans_backward_decision_desc:0 "Colapasar el Imperio Otomano en 1 click"
+
+ ottomans_backward_event.2.t:0 "La decisión de retroceder el Imperio Otomano"
+ ottomans_backward_event.2.d:0 "¿Iniciar la vuelta a la edad media del Imperio Otomano?"
+ ottomans_backward_event.2.ff:0 "Con solo pulsar un botón, decides el destino de este país..."
+ ottomans_backward_event.2.a:0 "Sí, hazlo"
+ ottomans_backward_event.2.x:0 "No (ocultar decisión y NO retroceder este país)"
+

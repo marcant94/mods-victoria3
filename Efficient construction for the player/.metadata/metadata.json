@@ -1,0 +1,13 @@
+{
+    "name": "Efficient construction for the player",
+    "id": "3089078909",
+    "version": "17.0",
+    "supported_game_version": "",
+    "picture": "thumbnail.png",
+    "short_description": "Construction is more efficient and faster",
+    "tags": ["Balance", "Economy and Buildings", "Journal Entries", "Utilities"],
+    "relationships": [],
+    "game_custom_data": {
+        "multiplayer_synchronized": true
+    }
+}

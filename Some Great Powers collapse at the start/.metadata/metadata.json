@@ -1,0 +1,13 @@
+{
+  "name" : "Some Great Powers collapse at the start",
+  "id" : "3048235112",
+  "version" : "5.2",
+  "supported_game_version" : "",
+  "picture": "thumbnail.png",
+  "short_description" : "Some Great Powers collapse at the start",
+  "tags" : [],
+  "relationships" : [],
+  "game_custom_data" : {
+    "multiplayer_synchronized" : true
+  }
+}

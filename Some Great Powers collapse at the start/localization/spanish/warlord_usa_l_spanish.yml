@@ -1,0 +1,22 @@
+﻿l_spanish:
+ usa_warlord_events.100.tt:0 "E.E.U.U. colapsa al inicio"
+ usa_warlord_events.100.dd:0 "El colapso de E.E.U.U."
+ usa_warlord_events.100.ff:0 "El sueño de alrededor de un tercio del mundo moderno, aunque "Victoria 3" todavía no permite dividir a Estados Unidos en estados específicos, y de hecho este país aún no está en la cima de su poder, ni siquiera llegó a la costa occidental del continente."
+ usa_warlord_events.100.aa:0 "El oeste ha caido..."
+ usa_warlord_events.100.a:0 "Jugar como CSA"
+ usa_warlord_events.100.b:0 "Jugar como Nueva Inglaterra"
+ usa_warlord_events.100.c:0 "Jugar como Nueva Africa"
+ usa_warlord_events.100.d:0 "Jugar como Louisiana"
+ usa_warlord_events.100.e:0 "Jugar como Cherokee"
+ usa_warlord_events.100.f:0 "Jugar como Michigan"
+ usa_warlord_events.100.g:0 "Jugar como la Confederación Iroquois"
+ usa_warlord_events.100.h:0 "Jugar como Muskogee (nación descentralizada)"
+ 
+ usa_collapse_decision:0 "El colapso de E.E.U.U."
+ usa_collapse_decision_desc:0 "Colapsar E.E.U.U. en 1 click"
+
+ usa_warlord_event.2.t:0 "La decisión de colapsar E.E.U.U."
+ usa_warlord_event.2.d:0 "¿Iniciar el colapso de E.E.U.U.?"
+ usa_warlord_event.2.ff:0 "Con solo pulsar un botón, decides el destino de este país..."
+ usa_warlord_event.2.a:0 "Sí, hazlo"
+ usa_warlord_event.2.x:0 "No (ocultar decisión y NO colapsar este país)"

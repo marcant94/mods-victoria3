@@ -1,0 +1,13 @@
+{
+  "name" : "Faster Assimilation",
+  "id" : "3042917383",
+  "version" : "6.2",
+  "supported_game_version" : "",
+  "short_description" : "Assimilation increased to improve performance",
+  "picture": "thumbnail.png",
+  "tags" : ["Balance", "Cultures and Religions", "Fixes", "Pops", "Utilities"],
+  "relationships" : [],
+  "game_custom_data" : {
+    "multiplayer_synchronized" : true
+  }
+}

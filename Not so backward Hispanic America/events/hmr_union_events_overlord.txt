@@ -1,0 +1,229 @@
+﻿namespace = hmr_union
+
+# Overlord mashes 2 hmr together
+# Se anexiona otro subdito
+hmr_union.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = hmr_union.2.t
+	desc = hmr_union.2.d
+	flavor = hmr_union.1.f
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		random_subject_or_below = {
+			limit = {
+				OR = {
+					country_has_primary_culture = cu:mexican
+					country_has_primary_culture = cu:argentine
+					country_has_primary_culture = cu:central_american
+					country_has_primary_culture = cu:caribeno
+					country_has_primary_culture = cu:north_andean
+					country_has_primary_culture = cu:south_andean
+					country_has_primary_culture = cu:chilean
+					country_has_primary_culture = cu:platinean
+					country_has_primary_culture = cu:ecuadorian
+					country_has_primary_culture = cu:colombian
+					country_has_primary_culture = cu:venezuelan
+					country_has_primary_culture = cu:peruvian
+					country_has_primary_culture = cu:bolivian
+					country_has_primary_culture = cu:paraguayan
+					country_has_primary_culture = cu:uruguayan
+				}
+				relations:root >= relations_threshold:amicable
+				is_ai = yes
+			}
+			save_scope_as = hmr_scope_1
+		}
+		random_subject_or_below = {
+			limit = {
+				OR = {
+					country_has_primary_culture = cu:mexican
+					country_has_primary_culture = cu:argentine
+					country_has_primary_culture = cu:central_american
+					country_has_primary_culture = cu:caribeno
+					country_has_primary_culture = cu:north_andean
+					country_has_primary_culture = cu:south_andean
+					country_has_primary_culture = cu:chilean
+					country_has_primary_culture = cu:platinean
+					country_has_primary_culture = cu:ecuadorian
+					country_has_primary_culture = cu:colombian
+					country_has_primary_culture = cu:venezuelan
+					country_has_primary_culture = cu:peruvian
+					country_has_primary_culture = cu:bolivian
+					country_has_primary_culture = cu:paraguayan
+					country_has_primary_culture = cu:uruguayan
+				}
+				relations:root >= relations_threshold:amicable
+				is_ai = yes
+				NOT = {
+					scope:hmr_scope_1 = THIS
+				}
+			}
+			save_scope_as = hmr_scope_2
+		}
+	}
+
+	option = {
+		name = hmr_union.2.a
+		default_option = yes
+		if = {
+			limit = {
+				scope:hmr_scope_1.gdp > scope:hmr_scope_2.gdp
+			}
+			hidden_effect = {
+				every_state = {
+					limit = {
+						has_claim_by = scope:hmr_scope_2
+					}
+					state_region = {
+						remove_claim = scope:hmr_scope_2
+						add_claim = scope:hmr_scope_1
+					}
+				}
+			}
+			scope:hmr_scope_1 = {
+				annex_with_incorporation = scope:hmr_scope_2
+
+				# Si tiene el diario de los caudillos por haberse independizado de España, ahora lo lógico es perderlo
+				if = {
+					limit = {
+						has_journal_entry = je_caudillo
+					}
+					change_variable = { name = caudillo_var add = -100000 }
+				}
+
+			}
+		}
+		else = {
+			hidden_effect = {
+				every_state = {
+					limit = {
+						has_claim_by = scope:hmr_scope_1
+					}
+					state_region = {
+						remove_claim = scope:hmr_scope_1
+						add_claim = scope:hmr_scope_2
+					}
+				}
+			}
+			scope:hmr_scope_2 = {
+				annex_with_incorporation = scope:hmr_scope_1
+
+				# Si tiene el diario de los caudillos por haberse independizado de España, ahora lo lógico es perderlo
+				if = {
+					limit = {
+						has_journal_entry = je_caudillo
+					}
+					change_variable = { name = caudillo_var add = -100000 }
+				}
+
+			}
+		}
+
+
+		hidden_effect = {
+			remove_global_variable = hmr_deci_waiting_var
+			add_modifier = {
+				name = hmr_test_modifier
+				months = 12 # short_modifier_time
+			}
+		}
+
+	}
+
+	option = {
+		name = hmr_union.2.z
+		hidden_effect = {
+			remove_global_variable = hmr_deci_waiting_var
+		}
+	}
+
+}
+
+# Hispanic America complete event for Overlord
+# Se crea la republica de Hispanoamérica
+hmr_union.6 = {
+	type = country_event
+	placement = ROOT
+
+	title = hmr_union.5.t
+	desc = hmr_union.6.d
+	flavor = hmr_union.5.f
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		random_subject_or_below = {
+			limit = {
+				OR = {
+					country_has_primary_culture = cu:mexican
+					country_has_primary_culture = cu:argentine
+					country_has_primary_culture = cu:central_american
+					country_has_primary_culture = cu:caribeno
+					country_has_primary_culture = cu:north_andean
+					country_has_primary_culture = cu:south_andean
+					country_has_primary_culture = cu:chilean
+					country_has_primary_culture = cu:platinean
+					country_has_primary_culture = cu:ecuadorian
+					country_has_primary_culture = cu:colombian
+					country_has_primary_culture = cu:venezuelan
+					country_has_primary_culture = cu:peruvian
+					country_has_primary_culture = cu:bolivian
+					country_has_primary_culture = cu:paraguayan
+					country_has_primary_culture = cu:uruguayan
+				}
+				# any_scope_state = {
+				# 	OR = {
+				# 		state_region = s:.......
+				# 	}
+				# 	count >= 9
+				# }
+			}
+			save_scope_as = hmr_country
+			ruler = {
+				save_scope_as = hmr_country_ruler
+			}
+		}
+	}
+
+	option = {
+		name = hmr_union.5.a
+		add_modifier = {
+			name = lat_unified_overlord
+			months = normal_modifier_time
+		}
+		
+		# if = {
+		# 	limit = {
+		# 		NOT = { is_subject_type = subject_type_dominion }
+		# 	}
+		# 	change_subject_type = subject_type_dominion
+		# }
+
+	}
+}

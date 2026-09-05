@@ -1,0 +1,67 @@
+﻿namespace = britain_backward_events
+
+britain_backward_events.100 = { 
+	type = country_event
+	placement = c:GBR
+	duration = 1
+
+	title = britain_backward_events.100.tt
+	desc = britain_backward_events.100.dd
+	flavor = britain_backward_events.100.ff
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_armored_train.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/armored_train"
+
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+
+	trigger = {
+	    #NOT = { has_global_variable = britain_hide_backward_var }
+	    #this = c:GBR
+		#exist = c:GBR
+	}
+
+	immediate = {
+		# set_global_variable = britain_hide_backward_var
+		
+		activate_law = law_type:law_ethnostate
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_hereditary_bureaucrats
+
+			activate_law = law_type:law_national_militia
+			activate_law = law_type:law_peasant_levies
+		
+			activate_law = law_type:law_industry_banned
+			activate_law = law_type:law_traditionalism
+			
+		activate_law = law_type:law_isolationism
+		activate_law = law_type:law_consumption_based_taxation
+		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_no_colonial_affairs
+		activate_law = law_type:law_local_police
+		activate_law = law_type:law_no_schools
+		activate_law = law_type:law_no_health_system
+		
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_no_womens_rights
+		activate_law = law_type:law_closed_borders
+		activate_law = law_type:law_slave_trade
+		
+		every_subject_or_below = {
+			make_independent = yes
+		}
+
+	}
+	
+	option = {
+		default_option = yes
+		name = britain_backward_events.100.aa
+	}
+	
+}
+
+
+

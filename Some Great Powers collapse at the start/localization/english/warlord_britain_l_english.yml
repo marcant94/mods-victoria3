@@ -1,0 +1,28 @@
+﻿l_english:
+ britain_warlord_events.100.tt:0 "Britain collapse at the start"
+ britain_warlord_events.100.dd:0 "Britain collapse"
+ britain_warlord_events.100.ff:0 "Who would have thought that the country, after the ruler of which this game and era is named, fell apart at the start! Decolonization, including Albion, occurred 150 years earlier. At least who will now prevent other countries from sharing the rich British inheritance?"
+ britain_warlord_events.100.aa:0 "We can rebuild it, we have the technology!"
+ britain_warlord_events.100.a:0 "Back to the past..."
+ britain_warlord_events.100.b:0 "Play as Newfoundland"
+ britain_warlord_events.100.c:0 "Play as Andalusia (Gibraltar)"
+ britain_warlord_events.100.d:0 "Play as Bahamas"
+ britain_warlord_events.100.e:0 "Play as West-India"
+ britain_warlord_events.100.f:0 "Play as Maya (VERY small territory)"
+ britain_warlord_events.100.g:0 "Play as Amazonia"
+ britain_warlord_events.100.h:0 "Play as Wales"
+ britain_warlord_events.100.i:0 "Play as Scotland"
+ britain_warlord_events.100.j:0 "Play as Ireland"
+ britain_warlord_events.100.k:0 "Play as Jamaica"
+ britain_warlord_events.100.l:0 "Play as Malta"
+ 
+ britain_collapse_decision:0 "The collapse of Britain"
+ britain_collapse_decision_desc:0 "Collapse Britain in 1 click"
+
+ britain_warlord_event.2.t:0 "The decision to collapse Britain"
+ britain_warlord_event.2.d:0 "Start the collapse of Britain?"
+ britain_warlord_event.2.ff:0 "With the push of a single button, you decide the fate of this country..."
+ britain_warlord_event.2.a:0 "Yes, do it"
+ britain_warlord_event.2.x:0 "No (hide decision and NOT collapse this country)"
+ 
+

@@ -1,0 +1,9 @@
+﻿POPULATION = {
+	c:SPA = {
+		
+		effect_starting_pop_wealth_high = yes
+		effect_starting_pop_literacy_high = yes
+		# Estatuto Real de 1834 was in effect; the Constitution of 1812 was not restored until August of 1836
+		
+	}
+}

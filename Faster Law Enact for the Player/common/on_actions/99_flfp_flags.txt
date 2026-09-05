@@ -1,0 +1,9 @@
+on_game_started_after_lobby = {
+    effect = {
+        if = {
+            limit = { NOT = { has_global_variable = player_mods_active } }
+            set_global_variable = { name = player_mods_active value = 0 }
+        }
+        change_global_variable = { name = player_mods_active add = 1 }
+    }
+}

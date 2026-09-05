@@ -1,0 +1,9 @@
+﻿l_spanish:
+  enable_more_migration: "Activar: Migración extra para el jugador"
+  enable_more_migration_desc: "El jugador obtiene migración extra"
+  disable_more_migration: "Desactivar: Migración extra para el jugador"
+  disable_more_migration_desc: "El jugador deja de recibir migración extra"
+  mmfp_migration_extra:0 "Bono de migración para el jugador"
+
+
+  

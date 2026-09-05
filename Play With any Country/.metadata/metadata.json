@@ -1,0 +1,12 @@
+{
+    "name": "Play with any Country",
+    "id": "3156673815",
+    "version": "1.1",
+    "supported_game_version": "",
+    "short_description": "Play with any Country",
+    "tags": ["Diplomacy", "Gameplay", "Map", "Utilities"],
+    "relationships": [],
+    "game_custom_data": {
+        "multiplayer_synchronized": false
+    }
+}

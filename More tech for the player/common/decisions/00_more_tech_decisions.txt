@@ -1,0 +1,45 @@
+﻿enable_more_tech = {
+	is_shown = {
+		is_player = yes
+		NOT = { has_global_variable = hide_mods_decisions }
+		NOT = {
+			has_modifier = mtfp_university_extra
+		}
+	}
+
+	possible = {
+		is_player = yes
+		NOT = {
+			has_modifier = mtfp_university_extra
+		}
+	}
+
+	when_taken = {
+		add_modifier = {
+			name = mtfp_university_extra
+		}
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+disable_more_tech = {
+	is_shown = {
+		has_modifier = mtfp_university_extra
+		NOT = { has_global_variable = hide_mods_decisions }
+	}
+
+	possible = {
+		has_modifier = mtfp_university_extra
+	}
+
+	when_taken = {
+		remove_modifier = mtfp_university_extra
+	}
+
+	ai_chance = {
+		value = 100
+	}
+}

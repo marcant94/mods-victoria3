@@ -1,0 +1,8 @@
+﻿
+# El Kongo es practicamente de los primeros paises que se puede conquistar con España,
+# y una vez conquistado ya no deja liberarlo
+KON = {
+	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}

@@ -1,0 +1,106 @@
+﻿namespace = spain_advance_event
+
+spain_advance_event.2 = {
+	type = country_event
+	placement = c:SPA
+	hidden = yes
+	
+	trigger = {
+		# is_player = yes
+	    this = c:SPA
+		exist = c:SPA
+	}
+	
+	immediate = {
+
+		# II Legislatura de las Cortes Generales bajo el Estatuto Real durante el Reinado de Isabel II
+		# set_next_election_date = 1836.2.26			# Ya no hace falta, ahora ya está en esta fecha
+        # activate_law = law_type:law_wealth_voting		# Ya no hace falta, la oligarquía ahora ya tiene elecciones
+
+
+		# Que España empezara con supremacía nacional en 1836 no es muy representativo de la España de la época
+		activate_law = law_type:law_racial_segregation
+		# activate_law = law_type:law_homesteading
+		# activate_law = law_type:law_dedicated_police
+		# activate_law = law_type:law_colonial_resettlement
+		activate_law = law_type:law_women_own_property
+
+		# España como país no tuvo nunca esclavitud en la península
+		# activate_law = law_type:law_slavery_banned 	# Ya no hace falta, ahora existe la esclavitud colonial
+
+
+		# España no era esclavista, y menos en la península,
+		# no estaba prohibida por cupla de la ley impuesta por Inglaterra "asiento de negros"
+		ig:ig_devout = {
+			remove_ideology = ideology_pro_slavery
+			add_ideology = ideology_anti_slavery
+		}
+
+		# España no tiene burocracia para elevar el nivel
+		# set_institution_investment_level = {
+		# 	institution = institution_schools
+		# 	level = 2
+		# }
+
+
+		# every_interest_group = {
+		# 	limit = {
+		# 		is_in_government = yes
+		# 	}
+		# 	remove_ruling_interest_group = yes
+		# }
+
+		# ig:ig_intelligentsia = {
+		# 	add_ruling_interest_group = yes
+		# }
+
+		# ig:ig_petty_bourgeoisie = {
+		# 	add_ruling_interest_group = yes
+		# }
+
+		# ig:ig_rural_folk = {
+		# 	add_ruling_interest_group = yes
+		# }
+
+		add_modifier = {
+			name = slow_colonies_esp
+			years = 40
+			is_decaying = yes
+		}
+		
+		add_declared_interest = region_italy
+		# add_declared_interest = region_congo
+		
+        # if = {
+		# 	# Puerto Rico no era un subdito, pero es por mantenerlo esclavista
+		# 	# y abolir la esclavitud en la península para ser más realista
+		# 	limit = { exists = s:STATE_PUERTO_RICO.region_state:SPA }
+
+		# 	create_country = {
+		# 		tag = PCO
+		# 		origin = this
+		# 		state = s:STATE_PUERTO_RICO.region_state:SPA
+
+		# 		on_created = {
+		# 			c:SPA = {
+		# 				create_diplomatic_pact = {
+		# 					country = c:PCO
+		# 					type = puppet
+		# 				}
+		# 			}
+
+		# 			c:PCO = {
+		# 				activate_law = law_type:law_no_colonial_affairs
+		# 				activate_law = law_type:law_legacy_slavery
+		# 			}
+		# 		}
+		# 	}
+
+		# }
+
+        hidden_effect = {
+			
+		}
+	}
+	
+}

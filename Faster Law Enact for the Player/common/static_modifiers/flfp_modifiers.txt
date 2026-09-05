@@ -1,0 +1,9 @@
+# All global modifiers are here.  They are applied from certain game-features.
+#
+# Effects are fully scriptable here.
+#these names can NOT be removed or changed, as the code uses them....
+flfp_faster_law_extra = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	
+	country_law_enactment_speed_mult = 0.5
+}

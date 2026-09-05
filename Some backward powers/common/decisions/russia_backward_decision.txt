@@ -1,0 +1,53 @@
+﻿russia_backward_decision = {
+	is_shown = {
+		is_player = yes
+		exists = c:RUS
+		NOT = { this = c:RUS }
+		NOT = { has_global_variable = russia_hide_backward_var }
+		OR {
+			NOT = {
+				c:RUS = { has_law = law_type:law_ethnostate }
+			}
+			NOT = {
+				c:RUS = { has_law = law_type:law_isolationism }
+			}
+			NOT = {
+				c:RUS = { has_law = law_type:law_hereditary_bureaucrats }
+			}
+			NOT = {
+				c:RUS = { has_law = law_type:law_peasant_levies }
+			}
+			NOT = {
+				c:RUS = { has_law = law_type:law_consumption_based_taxation }
+			}
+			NOT = {
+				c:RUS = { has_law = law_type:law_serfdom }
+			}
+			NOT = {
+				c:RUS = { has_law = law_type:law_closed_borders }
+			}
+			NOT = {
+				c:RUS = { has_law = law_type:law_local_police }
+			}
+		}
+	}
+
+	possible = {
+        always = yes
+		exists = c:RUS
+		NOT = { this = c:RUS }
+		NOT = { has_global_variable = russia_hide_backward_var }
+	}
+
+	when_taken = {
+	
+		trigger_event = {
+			id = russiabackward_deci.2
+			popup = yes
+		}
+	}
+
+	ai_chance = {
+		base = 0
+	}
+}

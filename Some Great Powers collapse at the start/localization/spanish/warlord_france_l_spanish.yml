@@ -1,0 +1,18 @@
+﻿l_spanish:
+ france_warlord_events.100.tt:0 "El colapso de Francia al inicio"
+ france_warlord_events.100.dd:0 "Francia colapsa"
+ france_warlord_events.100.ff:0 "Adiós Francia"
+ france_warlord_events.100.aa:0 "Podemos reconstruirlo, tenemos la tecnología"
+ france_warlord_events.100.a:0 "Volver al pasado…"
+ france_warlord_events.100.b:0 "Jugar como Occitania"
+ france_warlord_events.100.c:0 "Jugar como Britania"
+
+ france_collapse_decision:0 "El colapso de Francia"
+ france_collapse_decision_desc:0 "Colapsar Francia en 1 click"
+ 
+ france_warlord_event.2.t:0 "La decisión de colapsar Francia"
+ france_warlord_event.2.d:0 "¿Iniciar el colapso de Francia?"
+ france_warlord_event.2.ff:0 "Con solo pulsar un botón, decides el destino de este país..."
+ france_warlord_event.2.a:0 "Sí, hazlo"
+ france_warlord_event.2.x:0 "No (ocultar decisión y NO colapsar este país)"
+ 

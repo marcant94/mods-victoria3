@@ -1,0 +1,9 @@
+﻿l_spanish:
+  enable_faster_law_enact: "Activar: Promulgación de leyes más rápidas para el jugador"
+  enable_faster_law_enact_desc: "El jugador promulga las leyes más rapido"
+  disable_faster_law_enact: "Desactivar: Promulgación de leyes más rápidas para el jugador"
+  disable_faster_law_enact_desc: "El jugador deja de promulgar las leyes más rapido"
+  flfp_faster_law_extra:0 "Bono de velocidad de leyes para el jugador"
+
+
+  

@@ -1,0 +1,8 @@
+
+STATES = {
+
+    s:STATE_WEST_SAHARA = {
+		add_claim = c:SPA
+	}
+	
+}

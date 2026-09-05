@@ -1,0 +1,12 @@
+{
+    "name": "Efficient Bureaucracy for the Player",
+    "id": "3075580639",
+    "version": "8.2",
+    "supported_game_version": "",
+    "short_description": "The population requires less bureaucracy",
+    "tags": ["Balance", "Diplomacy", "Fixes", "Utilities"],
+    "relationships": [],
+    "game_custom_data": {
+        "multiplayer_synchronized": true
+    }
+}

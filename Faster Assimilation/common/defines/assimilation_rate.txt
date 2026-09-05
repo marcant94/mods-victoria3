@@ -1,0 +1,28 @@
+NPops = {
+
+	# Assimilation
+	ASSIMILATION_RATE = 1					# 0.002		# Percentage of pops who will Assimilate into a different Culture each month, if eligible
+	ASSIMILATION_UNINCORPORATED_MULT = 1 	# 0.1 		# ASSIMILATION_RATE is multiplied by this in unincorporated states
+	# MIN_ASSIMILATION = 1								# If there is any assmiliation at least this many people will assimilate
+
+
+	# Conversion
+	CONVERSION_RATE = 1						# 0.002		# Percentage of pops who will Convert into a different Religion each month, if eligible
+	CONVERSION_UNINCORPORATED_MULT = 1		# 0.1 		# CONVERSION_RATE is multiplied by this in unincorporated states
+	# MIN_CONVERSION = 1								# If there is any conversion at least this many people will convert
+
+	
+	# Consolidation
+	POP_MERGE_MAX_WORKFORCE_MINOR_CONSOLIDATION = 100					# 10
+	POP_MERGE_MAX_WORKFORCE_MODERATE_CONSOLIDATION = 300				# 30
+	POP_MERGE_MAX_WORKFORCE_AGGRESSIVE_CONSOLIDATION = 500				# 50
+	POP_MERGE_MAX_WORKFORCE_MAX_CONSOLIDATION = 1000					# 100
+
+}
+
+NCountry = {
+	INCORPORATION_TIME_SAME_CULTURE = 1			# 2			# Years if the state is a Homeland of one of the country's primary cultures
+	INCORPORATION_TIME_SAME_HERITAGE = 2.5		# 5			# Years if the state is a Homeland of a culture that matches of one of the country's primary cultures' Heritage traits
+	INCORPORATION_TIME_SAME_TRAIT = 5			# 10		# Years if the state is a Homeland of a culture with any trait in common with a country's primary cultures
+	INCORPORATION_TIME_NO_MATCH = 10			# 20		# Years if the state's Homeland cultures have nothing in common with the country's primary cultures
+}

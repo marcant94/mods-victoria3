@@ -1,0 +1,9 @@
+﻿l_english:
+  enable_efficient_construction: "Enable: Efficient construction for the player"
+  enable_efficient_construction_desc: "The player receives extra construction"
+  disable_efficient_construction: "Disable: Efficient construction for the player"
+  disable_efficient_construction_desc: "The player stops receiving extra construction"
+  mbfp_construction_extra:0 "Player Construction Bonus"
+
+
+  

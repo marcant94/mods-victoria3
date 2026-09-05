@@ -1,0 +1,5 @@
+﻿l_english:
+  show_player_decisions: "Mod: Show decisions"
+  show_player_decisions_desc: "Shows the decisions for the player"
+  hide_player_decisions: "Mod: Hide decisions"
+  hide_player_decisions_desc: "Hides the decisions for the player"

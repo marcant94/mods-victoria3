@@ -1,0 +1,12 @@
+{
+  "name" : "War Exhaustion Balanced",
+  "id" : "3124397324",
+  "version" : "2.0",
+  "supported_game_version" : "",
+  "short_description" : "Now occupying territory counts more than the number of battles won.",
+  "tags" : ["Balance", "Utilities", "Warfare"],
+  "relationships" : [],
+  "game_custom_data" : {
+    "multiplayer_synchronized" : true
+  }
+}

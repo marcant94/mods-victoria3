@@ -1,0 +1,26 @@
+﻿l_english:
+ ottomans_warlord_events.100.tt:0 "Ottomans collapse at the start"
+ ottomans_warlord_events.100.dd:0 "The collapse of the Ottomans"
+ ottomans_warlord_events.100.ff:0 "We will slightly speed up the events of this world. Let Egypt drive the Ottomans into stagnation in the current patch of the game - we will help them and bite off the maximum possible number of countries and peoples from them."
+ ottomans_warlord_events.100.aa:0 "i'm sick of it"
+ ottomans_warlord_events.100.b:0 "Play as Bulgaria"
+ ottomans_warlord_events.100.c:0 "Play as Yugoslavia"
+ ottomans_warlord_events.100.d:0 "Play as Armenia"
+ ottomans_warlord_events.100.e:0 "Play as Syria"
+ ottomans_warlord_events.100.f:0 "Play as Iraq"
+ ottomans_warlord_events.100.g:0 "Play as Kurdistan"
+ ottomans_warlord_events.100.h:0 "Play as Assyria"
+ ottomans_warlord_events.100.i:0 "Play as Albania"
+ ottomans_warlord_events.100.j:0 "Play as Bosnia and Herzegovina"
+ ottomans_warlord_events.100.k:0 "Play as Cyprus"
+ ottomans_warlord_events.100.l:0 "Play as Romania"
+ 
+ ottomans_collapse_decision:0 "The collapse of Ottomans"
+ ottomans_collapse_decision_desc:0 "Collapse Ottomans in 1 click"
+
+ ottomans_warlord_event.2.t:0 "The decision to collapse Ottomans"
+ ottomans_warlord_event.2.d:0 "Start the collapse of Ottomans?"
+ ottomans_warlord_event.2.ff:0 "With the push of a single button, you decide the fate of this country..."
+ ottomans_warlord_event.2.a:0 "Yes, do it"
+ ottomans_warlord_event.2.x:0 "No (hide decision and NOT collapse this country)"
+

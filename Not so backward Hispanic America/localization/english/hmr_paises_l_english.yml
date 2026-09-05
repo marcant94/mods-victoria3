@@ -1,0 +1,54 @@
+﻿l_english:
+  PLT_1:0 "United Provinces"
+  dyn_c_hm_americas_empire:0 "Empire of the Americas"
+  dyn_c_hm_americas_republic:0 "Great Republic of the Americas"
+  dyn_c_hm_americas_union:0 "Union of the Americas"
+  dyn_c_hm_americas_state:0 "Great State of the Americas"
+  HMR: "Union of the Americas"
+  HMR_ADJ: "Americas"
+  HMR_ADJ_SM: "hispano-american"
+  HMR_ADJ_SF: "hispano-american"
+  HMR_ADJ_PM: "hispano-americans"
+  HMR_ADJ_PF: "hispano-americans"
+  dp_unify_hispanoamerica: "Unify Hispanoamerica"
+  dp_leadership_hispanoamerica: "Leadership in Hispanoamerica"
+  STATE_ESTREMADURA: "Lisboa"
+
+  # Decisions
+  hmr_unite_subject: "Confederated Hispanoamerica"
+  hmr_unite_subject_desc: "The dream of the Spanish-American Confederation must come true. Since we have economic dominance over our sister colonies, and, at the same time, maintain good relations with the central government, we can propose the annexation of one of our neighbors."
+  hmr_unite_overlord: "Confederated Hispanoamerica"
+  hmr_unite_overlord_desc: "We want all the Spanish-American colonies to converge into one and thus emerge as a Spanish-American nation. To achieve this, we must convince the local colonial administrations that unification would be very beneficial for them."
+  unite_hmr_tt: "Two Spanish American colonies are going to unite."
+
+  # Journal entries
+  je_hmr_subject: "Confederated Hispanic America"
+  je_hmr_subject_reason: "The dream of the Spanish-American Confederation must come true. Since we have economic dominance over our sister colonies, and, at the same time, maintain good relations with the central government, we can propose the annexation of one of our neighbors."
+  je_hmr_overlord: "Confederated Hispanoamerica"
+  je_hmr_overlord_reason: "We want all the Spanish-American colonies to converge into one and thus emerge a Spanish-American nation. To achieve this, we must convince the local colonial administrations that unification would be very beneficial for them."
+
+  # Modifiers
+  hmr_test_modifier: "Unifier of Latin America"
+  lat_unified_subject: "Spanish-American Confederation"
+  lat_unified_overlord: "Spanish-American Confederation"
+
+  # Events
+  hmr_union.1.t: "Confederation with [SCOPE.sCountry('hmr_annex_scope').GetName]"
+  hmr_union.1.d: "[SCOPE.sCharacter('hmr_overlord_ruler').GetCustom('ES_ElLa')|U] [SCOPE.sCharacter('hmr_overlord_ruler').GetPrimaryRoleTitle|l] [SCOPE.sCharacter('hmr_overlord_ruler'). GetFullName] has signed the confederation law between [ROOT.GetCountry.GetName] and [SCOPE.sCountry('hmr_annex_scope').GetName]. This represents a great victory for our goal of unifying the entirety of Latin America."
+  hmr_union.1.f: "With each document signed and sealed, we approach the construction of a nation step by step. The colonies have not always gotten along well, but the people of Latin America are determined to see this come to fruition. "
+  hmr_union.1.a: "God save [SCOPE.sCharacter('hmr_overlord_ruler').GetCustom('ES_AlAla')] [SCOPE.sCharacter('hmr_overlord_ruler').GetPrimaryRoleTitle|l]!"
+  
+  hmr_union.2.t: "The unification of [SCOPE.sCountry('hmr_scope_1').GetName] and [SCOPE.sCountry('hmr_scope_2').GetName]"
+  hmr_union.2.d: "[ROOT.GetCountry.GetRuler.GetCustom('ES_ElLa')|U] [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle|l] [ROOT.GetCountry.GetRuler.GetFullName] has signed the law of confederation between [SCOPE.sCountry('hmr_scope_1').GetName] and [SCOPE.sCountry('hmr_scope_2').GetName]. This represents a great victory for our goal of unifying the entirety of Latin America."
+  hmr_union.2.a: "God save [ROOT.GetCountry.GetRuler.GetCustom('ES_AlAla')] [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle|l]!"
+  hmr_union.2.z: "Everything remains the same"
+  
+  hmr_union.5.t: "Spanish-American Confederation"
+  hmr_union.5.d: "The unification of Latin America has been completed. The various colonial governments have been integrated into one, under the administration of [ROOT.GetCountry.GetName] and with the enthusiastic approval of [SCOPE.sCountry('hmr_overlord_country' ).GetName]."
+  hmr_union.5.f: "The dream of unifying Latin America has finally been fulfilled. From their humble beginnings as a small colony in the enormous and unknown north, the colonists have grown and adapted. They have become a people and have forged a nation."
+  hmr_union.5.a: "Latin America has finally been fulfilled"
+  hmr_union.6.d: "The unification of Latin America has been completed. The various colonial governments have been integrated into one, under the administration of [SCOPE.sCountry('hmr_country').GetName] and with the enthusiastic approval of [ROOT. GetCountry.GetName]."
+
+  lat_relations_tt: "Have at least friendly relations with two Spanish-American subjects"
+
+  unite_hmr_je_can_tt: "Have at least friendly relations and a GDP higher than that of a neighboring Spanish-American country with the same sovereign"

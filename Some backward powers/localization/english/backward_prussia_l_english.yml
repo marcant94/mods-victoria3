@@ -1,0 +1,16 @@
+﻿l_english:
+ prussia_backward_events.100.tt:0 "Prussia's return to the Middle Ages"
+ prussia_backward_events.100.dd:0 "Prussia's return to the Middle Ages"
+ prussia_backward_events.100.ff:0 "Bye Prussia"
+ prussia_backward_events.100.aa:0 "We can rebuild it, we have the technology!"
+ prussia_backward_events.100.a:0 "Back to the past..."
+
+ prussia_backward_decision:0 "The backward of Prussia"
+ prussia_backward_decision_desc:0 "backward Prussia in 1 click"
+ 
+ prussia_backward_event.2.t:0 "The decision to backward Prussia"
+ prussia_backward_event.2.d:0 "Start the backward of Prussia?"
+ prussia_backward_event.2.ff:0 "With the push of a single button, you decide the fate of this country..."
+ prussia_backward_event.2.a:0 "Yes, do it"
+ prussia_backward_event.2.x:0 "No (hide decision and NOT backward this country)"
+ 

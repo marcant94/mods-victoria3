@@ -1,0 +1,9 @@
+﻿l_english:
+  enable_faster_law_enact: "Enable: Faster law enact for the Player"
+  enable_faster_law_enact_desc: "The player enacts laws faster."
+  disable_faster_law_enact: "Disable: Faster law enact for the Player"
+  disable_faster_law_enact_desc: "The player enacts laws regularly."
+  flfp_faster_law_extra:0 "Law speed bonus for the player"
+
+
+  

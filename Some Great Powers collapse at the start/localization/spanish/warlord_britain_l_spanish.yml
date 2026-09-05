@@ -1,0 +1,27 @@
+﻿l_spanish:
+ britain_warlord_events.100.tt:0 "El colapso de Gran Bretaña al inicio"
+ britain_warlord_events.100.dd:0 "Gran Bretaña colapsa"
+ britain_warlord_events.100.ff:0 "¿Quién hubiera pensado que el país, tras cuyo gobernante se nombra este juego y esta época, se desmoronaría al inicio? La descolonización, incluyendo Albión, ocurrió 150 años antes. Al menos, ¿quién impedirá ahora que otros países se repartan la rica herencia británica?"
+ britain_warlord_events.100.aa:0 "Podemos reconstruirlo, tenemos la tecnología"
+ britain_warlord_events.100.a:0 "Volver al pasado…"
+ britain_warlord_events.100.b:0 "Jugar como Terranova"
+ britain_warlord_events.100.c:0 "Jugar como Andalucía (Gibraltar)"
+ britain_warlord_events.100.d:0 "Jugar como Bahamas"
+ britain_warlord_events.100.e:0 "Jugar como Indias Occidentales"
+ britain_warlord_events.100.f:0 "Jugar como Maya (territorio MUY pequeño)"
+ britain_warlord_events.100.g:0 "Jugar como Amazonia"
+ britain_warlord_events.100.h:0 "Jugar como Gales"
+ britain_warlord_events.100.i:0 "Jugar como Escocia"
+ britain_warlord_events.100.j:0 "Jugar como Irlanda"
+ britain_warlord_events.100.k:0 "Jugar como Jamaica"
+ britain_warlord_events.100.l:0 "Jugar como Malta"
+ 
+ britain_collapse_decision:0 "El colapso de Gran Bretaña"
+ britain_collapse_decision_desc:0 "Colapsar Gran Bretaña en 1 click"
+ 
+ britain_warlord_event.2.t:0 "La decisión de colapsar Gran Bretaña"
+ britain_warlord_event.2.d:0 "¿Iniciar el colapso de Gran Bretaña?"
+ britain_warlord_event.2.ff:0 "Con solo pulsar un botón, decides el destino de este país..."
+ britain_warlord_event.2.a:0 "Sí, hazlo"
+ britain_warlord_event.2.x:0 "No (ocultar decisión y NO colapsar este país)"
+ 

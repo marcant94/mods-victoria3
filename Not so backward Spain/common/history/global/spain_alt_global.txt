@@ -1,0 +1,8 @@
+GLOBAL = {
+    c:SPA = {
+        trigger_event = {
+		    id = spain_advance_event.2
+            days = 0
+        }
+    }
+}

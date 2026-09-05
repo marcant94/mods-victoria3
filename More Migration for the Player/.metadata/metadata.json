@@ -1,0 +1,12 @@
+{
+  "name" : "More Migration for the Player",
+  "id" : "3157181797",
+  "version" : "3.0",
+  "supported_game_version" : "",
+  "short_description" : "25% more migration for the player",
+  "tags" : ["Balance", "Cultures and Religions", "Pops"],
+  "relationships" : [],
+  "game_custom_data" : {
+    "multiplayer_synchronized" : true
+  }
+}

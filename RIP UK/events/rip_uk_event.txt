@@ -1,0 +1,135 @@
+﻿namespace = rip_uk_event
+
+rip_uk_event.1 = {
+	type = country_event
+	placement = c:GBR
+	hidden = yes
+	
+	trigger = {
+		# is_player = yes
+	    this = c:GBR
+		exist = c:GBR
+	}
+	
+	immediate = {
+
+		c:BIC = {
+			make_independent = yes
+		}
+
+        if = {
+			limit = { exists = s:STATE_CONNAUGHT.region_state:GBR }
+
+			create_country = {
+				tag = IRE
+				origin = this
+				state = s:STATE_CONNAUGHT.region_state:GBR
+
+				on_created = {
+					c:GBR = {
+						set_relations = { country = c:IRE value = -100 }
+					}
+					c:IRE = {
+						set_relations = { country = c:GBR value = -100 }
+					}
+
+				}
+
+			}
+
+			if = {
+				limit = { exists = s:STATE_LEINSTER.region_state:GBR }
+				s:STATE_LEINSTER.region_state:GBR = { set_state_owner = c:IRE }
+			}
+			if = {
+				limit = { exists = s:STATE_MUNSTER.region_state:GBR }
+				s:STATE_MUNSTER.region_state:GBR = { set_state_owner = c:IRE }
+			}
+			if = {
+				limit = { exists = s:STATE_ULSTER.region_state:GBR }
+				s:STATE_ULSTER.region_state:GBR = { set_state_owner = c:IRE }
+			}
+
+			create_diplomatic_play = {
+				name = ireland_war_of_independence
+				escalation = 20
+
+				type = dp_annex_war
+
+				target_state = s:STATE_CONNAUGHT.region_state:IRE
+				
+			}
+
+		}
+
+		if = {
+			limit = { exists = s:STATE_HIGHLANDS.region_state:GBR }
+
+			create_country = {
+				tag = SCO
+				origin = this
+				state = s:STATE_HIGHLANDS.region_state:GBR
+
+				on_created = {
+					c:GBR = {
+						set_relations = { country = c:SCO value = -100 }
+					}
+					c:SCO = {
+						set_relations = { country = c:GBR value = -100 }
+					}
+				}
+			}
+
+			if = {
+				limit = { exists = s:STATE_LOWLANDS.region_state:GBR }
+				s:STATE_LOWLANDS.region_state:GBR = { set_state_owner = c:SCO }
+			}
+			
+			create_diplomatic_play = {
+				name = scotland_war_of_independence
+				escalation = 20
+
+				type = dp_annex_war
+
+				target_state = s:STATE_HIGHLANDS.region_state:SCO
+				
+			}
+
+		}
+
+		if = {
+			limit = { exist = c:BIC }
+
+			c:GBR = {
+				set_relations = { country = c:BIC value = -100 }
+				
+				create_diplomatic_pact = {
+					country = c:BIC
+					type = dominion
+				}
+			}
+
+			c:BIC = {
+				set_relations = { country = c:GBR value = -100 }
+
+				create_diplomatic_play = {
+					name = india_independence_war
+					escalation = 20
+			
+					type = dp_independence
+
+					target_state = s:STATE_HOME_COUNTIES.region_state:GBR
+					
+					add_war_goal = {
+						holder = c:BIC
+						type = conquer_state
+						target_state = s:STATE_CEYLON.region_state:GBR
+					}
+				}
+			}
+		}
+
+
+	}
+	
+}

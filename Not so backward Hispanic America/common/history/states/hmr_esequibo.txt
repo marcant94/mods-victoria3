@@ -1,0 +1,5 @@
+﻿STATES = {
+	s:STATE_GUAYANA = {
+		add_claim = c:VNZ
+	}
+}

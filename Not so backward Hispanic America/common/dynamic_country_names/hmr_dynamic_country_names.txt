@@ -1,0 +1,73 @@
+﻿
+PLT = { # Provincias Unidas
+	dynamic_country_name = {
+		name = PLT_1
+		adjective = PLT_ADJ
+
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = { 
+			exists = c:SEQ
+		}
+	}
+}
+
+HMR = {
+	dynamic_country_name = {
+		name = dyn_c_hm_americas_empire
+		adjective = HMR_ADJ
+
+		is_main_tag_only = yes
+		priority = 10
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_monarchy
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_hm_americas_republic
+		adjective = HMR_ADJ
+
+		is_main_tag_only = yes
+		priority = 10
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				OR = {
+					has_law = law_type:law_parliamentary_republic
+					has_law = law_type:law_presidential_republic
+				}
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_hm_americas_union
+		adjective = HMR_ADJ
+
+		is_main_tag_only = yes
+		priority = 1200
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_council_republic
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_hm_americas_state
+		adjective = HMR_ADJ
+		
+		is_main_tag_only = yes
+		priority = 500
+		
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}
+}

@@ -1,0 +1,13 @@
+# All global modifiers are here.  They are applied from certain game-features.
+#
+# Effects are fully scriptable here.
+#these names can NOT be removed or changed, as the code uses them....
+ebfp_bureaucracy_extra = {
+	# icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+
+	country_bureaucracy_mult = 0.15
+	country_bureaucracy_investment_cost_factor_mult = -0.15
+
+	country_institution_size_change_speed_mult = 0.15
+}

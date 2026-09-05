@@ -1,0 +1,29 @@
+#Internal reference name of the decision
+enactCurrentLaw = {
+
+	#The requirements/to which countries the decision is shown
+	is_shown = {
+		enacting_any_law = yes
+		#An auxiliary variable is usually used to make sure the decision is not repeated more than once
+		#NOT = { has_variable = enactCurrentLaw_taken }
+	}
+
+	#The requirements for the decision to be taken
+	possible = {
+	}
+	
+	#The effects that are executed once the decision is taken
+	when_taken = {
+		add_enactment_phase = 1000
+		
+		#The auxiliary variable referenced in the is_shown trigger/section
+		#set_variable = {
+		#	name = example_decision_taken
+		#} 	
+	}	
+	
+	#The chance that the ai will take the decision
+	ai_chance = {
+		base = 0
+	}
+}

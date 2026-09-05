@@ -1,0 +1,12 @@
+{
+    "name": "Player Mods Framework",
+    "id": "3763936154",
+    "version": "1.1",
+    "supported_game_version": "",
+    "short_description": "Framework for Player Mods series - adds show/hide toggle for mod decisions",
+    "tags": ["Utilities", "Fixes"],
+    "relationships": [],
+    "game_custom_data": {
+        "multiplayer_synchronized": true
+    }
+}

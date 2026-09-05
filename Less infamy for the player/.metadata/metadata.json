@@ -1,0 +1,13 @@
+{
+    "name": "Less Infamy for the player",
+    "id": "3058601101",
+    "version": "8.0",
+    "supported_game_version": "",
+    "picture": "thumbnail.png",
+    "short_description": "The player has 75% less infamy and reduces it 200% faster",
+    "tags": ["Balance", "Journal Entries", "Utilities", "Warfare"],
+    "relationships": [],
+    "game_custom_data": {
+        "multiplayer_synchronized": true
+    }
+}

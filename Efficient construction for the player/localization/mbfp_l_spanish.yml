@@ -1,0 +1,11 @@
+﻿l_spanish:
+  enable_efficient_construction: "Activar: Construcción eficiente para el jugador"
+  enable_efficient_construction_desc: "El jugador obtiene construcción extra"
+  disable_efficient_construction: "Desactivar: Construcción eficiente para el jugador"
+  disable_efficient_construction_desc: "El jugador deja de recibir construcción extra"
+  je_more_building_for_player: "Más construcción para el jugador"
+  je_more_building_for_player_reason: "El jugador obtiene construcción extra"
+  mbfp_construction_extra:0 "Bono de construcción para el jugador"
+
+
+  

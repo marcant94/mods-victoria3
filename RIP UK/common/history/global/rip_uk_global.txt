@@ -1,0 +1,10 @@
+GLOBAL = {
+    
+    c:GBR = {
+        trigger_event = {
+		    id = rip_uk_event.1
+            days = 0
+        }
+    }
+
+}

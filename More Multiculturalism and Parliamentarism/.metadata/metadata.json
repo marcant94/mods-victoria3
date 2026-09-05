@@ -1,0 +1,14 @@
+{
+  "name" : "More Multiculturalism and Parliamentarism",
+  "id" : "3127463091",
+  "version" : "4.5",
+  "supported_game_version" : "",
+  "picture": "thumbnail.png",
+  "description" : "Adds multiculturalism and parliamentarism to intelligentsia and trade unions",
+  "short_description" : "Adds multiculturalism and parliamentarism to intelligentsia and trade unions",
+  "tags" : ["Balance", "Cultures And Religions", "Fixes", "Gameplay", "Interest Groups"],
+  "relationships" : [],
+  "game_custom_data" : {
+    "multiplayer_synchronized" : true
+  }
+}

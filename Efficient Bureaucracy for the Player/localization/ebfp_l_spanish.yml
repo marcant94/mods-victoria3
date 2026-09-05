@@ -1,0 +1,9 @@
+﻿l_spanish:
+  enable_efficient_bureaucracy: "Activar: Burocracia eficiente para el jugador"
+  enable_efficient_bureaucracy_desc: "El jugador obtiene burocracia extra"
+  disable_efficient_bureaucracy: "Desactivar: Burocracia eficiente para el jugador"
+  disable_efficient_bureaucracy_desc: "El jugador deja de recibir burocracia extra"
+  ebfp_bureaucracy_extra:0 "Bono de burocracia para el jugador"
+
+
+  

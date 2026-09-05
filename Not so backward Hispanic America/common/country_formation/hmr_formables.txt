@@ -1,0 +1,73 @@
+﻿HMR = {
+	use_culture_states = yes
+	
+	is_major_formation = yes
+	
+	unification_play = dp_unify_hispanoamerica
+	leadership_play = dp_leadership_hispanoamerica
+
+	required_states_fraction = 0.75
+	
+	ai_will_do = { always = yes }
+
+	possible = {
+		OR = {
+			country_has_primary_culture = cu:mexican
+			country_has_primary_culture = cu:argentine
+			country_has_primary_culture = cu:central_american
+			country_has_primary_culture = cu:caribeno
+			country_has_primary_culture = cu:north_andean
+			country_has_primary_culture = cu:south_andean
+			country_has_primary_culture = cu:chilean
+			country_has_primary_culture = cu:platinean
+			country_has_primary_culture = cu:ecuadorian
+			country_has_primary_culture = cu:colombian
+			country_has_primary_culture = cu:venezuelan
+			country_has_primary_culture = cu:peruvian
+			country_has_primary_culture = cu:bolivian
+			country_has_primary_culture = cu:paraguayan
+			country_has_primary_culture = cu:uruguayan
+		}	
+		any_country = {
+			OR = {
+				country_has_primary_culture = cu:mexican
+				country_has_primary_culture = cu:argentine
+				country_has_primary_culture = cu:central_american
+				country_has_primary_culture = cu:caribeno
+				country_has_primary_culture = cu:north_andean
+				country_has_primary_culture = cu:south_andean
+				country_has_primary_culture = cu:chilean
+				country_has_primary_culture = cu:platinean
+				country_has_primary_culture = cu:ecuadorian
+				country_has_primary_culture = cu:colombian
+				country_has_primary_culture = cu:venezuelan
+				country_has_primary_culture = cu:peruvian
+				country_has_primary_culture = cu:bolivian
+				country_has_primary_culture = cu:paraguayan
+				country_has_primary_culture = cu:uruguayan
+			}	
+			has_technology_researched = pan-nationalism	
+		}
+	}
+}
+
+PLT = {
+	states = {
+		STATE_BUENOS_AIRES
+		STATE_CHACO
+		STATE_SANTA_FE
+		STATE_URUGUAY
+		STATE_BAJO_PARAGUAY
+		STATE_ALTO_PARAGUAY
+		STATE_RIO_NEGRO
+		STATE_LA_PAMPA
+		STATE_TUCUMAN
+		STATE_JUJUY
+		STATE_CORRIENTES
+	}
+
+	required_states_fraction = 0.75
+	
+	ai_will_do = { always = yes }
+	
+}

@@ -1,0 +1,28 @@
+﻿namespace = usabackward_deci
+
+usabackward_deci.2 = {
+	type = country_event
+	
+	title = usa_backward_event.2.t
+	desc = usa_backward_event.2.d
+	flavor = usa_backward_event.2.ff
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/political_extremism"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	duration = 1
+	
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_political_extremism.bk2"
+	}
+	
+	option = {
+		name = usa_backward_event.2.a
+		default_option = yes
+		c:USA = { trigger_event = { id = usa_backward_events.100 } }
+	}
+
+	option = {
+	    set_global_variable = usa_hide_backward_var
+		name = usa_backward_event.2.x
+	}
+}

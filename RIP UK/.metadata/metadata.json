@@ -1,0 +1,13 @@
+{
+    "name": "Difficult start for Great Britain",
+    "id": "3154761099",
+    "version": "2.1",
+    "supported_game_version": "",
+    "picture": "thumbnail.png",
+    "short_description": "India, Scotland and Ireland begin a war of independence against Great Britain, and in addition all the great powers are rivals of Great Britain",
+    "tags": ["Alternative History", "Balance", "Diplomacy", "Warfare"],
+    "relationships": [],
+    "game_custom_data": {
+        "multiplayer_synchronized": false
+    }
+}

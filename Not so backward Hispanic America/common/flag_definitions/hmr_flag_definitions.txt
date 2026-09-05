@@ -1,0 +1,43 @@
+
+HMR = { # Las Americas
+	flag_definition = {
+		coa = HMR
+		subject_canton = HMR	
+		priority = 1
+	}	
+	flag_definition = {
+		coa = HMR_state
+		subject_canton = HMR_state
+		priority = 500
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = HMR_empire
+		subject_canton = HMR_empire	
+		priority = 25
+		trigger = { 
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_monarchy
+			}
+		}
+	}		
+	flag_definition = {
+		coa = HMR_communist
+		subject_canton = HMR_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = HMR_republic
+		subject_canton = HMR_republic
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}		
+}

@@ -1,0 +1,45 @@
+GLOBAL = {
+
+	c:ARG ?= {
+		activate_law = law_type:law_charitable_health_system
+		activate_law = law_type:law_religious_schools
+	}
+	
+	c:BOL ?= {
+		activate_law = law_type:law_charitable_health_system
+		activate_law = law_type:law_religious_schools
+	}
+	
+	c:CHL ?= {
+		activate_law = law_type:law_charitable_health_system
+		activate_law = law_type:law_religious_schools
+	}
+	
+	c:CLM ?= {
+		activate_law = law_type:law_charitable_health_system
+		activate_law = law_type:law_religious_schools
+	}
+	
+	c:ECU ?= {
+		activate_law = law_type:law_charitable_health_system
+		activate_law = law_type:law_religious_schools
+	}
+	
+	c:PRG ?= {
+		activate_law = law_type:law_charitable_health_system
+		activate_law = law_type:law_religious_schools
+		
+		activate_law = law_type:law_frontier_colonization
+	}
+	
+	c:URU ?= {
+		activate_law = law_type:law_charitable_health_system
+		activate_law = law_type:law_religious_schools
+	}
+	
+	c:VNZ ?= {
+		activate_law = law_type:law_charitable_health_system
+		activate_law = law_type:law_religious_schools
+	}
+
+}

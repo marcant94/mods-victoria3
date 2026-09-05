@@ -1,0 +1,28 @@
+﻿namespace = prussiabackward_deci
+
+prussiabackward_deci.2 = {
+	type = country_event
+	
+	title = prussia_backward_event.2.t
+	desc = prussia_backward_event.2.d
+	flavor = prussia_backward_event.2.ff
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/political_extremism"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	duration = 1
+	
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_political_extremism.bk2"
+	}
+	
+	option = {
+		name = prussia_backward_event.2.a
+		default_option = yes
+		c:PRU = { trigger_event = { id = prussia_backward_events.100 } }
+	}
+
+	option = {
+	    set_global_variable = ger_pru_hide_backward_var
+		name = prussia_backward_event.2.x
+	}
+}

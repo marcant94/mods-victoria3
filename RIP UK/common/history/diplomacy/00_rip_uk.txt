@@ -1,0 +1,122 @@
+
+DIPLOMACY = {
+
+	# Relations
+
+	c:GBR = {
+		set_relations = { country = c:BIC value = -100 }
+		set_relations = { country = c:FRA value = -100 }
+		set_relations = { country = c:AUS value = -100 }
+		set_relations = { country = c:USA value = -100 }
+		set_relations = { country = c:PRU value = -100 }
+		set_relations = { country = c:RUS value = -100 }
+		set_relations = { country = c:TUR value = -100 }
+	}
+
+	c:BIC = {
+		set_relations = { country = c:GBR value = -100 }
+	}
+
+	c:FRA = {
+		set_relations = { country = c:GBR value = -100 }
+		add_declared_interest = region_north_sea_coast
+	}
+
+	c:AUS = {
+		set_relations = { country = c:GBR value = -100 }
+	}
+
+	c:USA = {
+		set_relations = { country = c:GBR value = -100 }
+	}
+
+	c:PRU = {
+		set_relations = { country = c:GBR value = -100 }
+	}
+
+	c:RUS = {
+		set_relations = { country = c:GBR value = -100 }
+	}
+
+	c:TUR = {
+		set_relations = { country = c:GBR value = -100 }
+	}
+
+
+	# Rivalry
+
+	c:GBR = {
+		create_diplomatic_pact = {
+			country = c:FRA
+			type = rivalry
+		}
+
+		create_diplomatic_pact = {
+			country = c:AUS
+			type = rivalry
+		}
+
+		create_diplomatic_pact = {
+			country = c:USA
+			type = rivalry
+		}
+
+		create_diplomatic_pact = {
+			country = c:PRU
+			type = rivalry
+		}
+
+		create_diplomatic_pact = {
+			country = c:RUS
+			type = rivalry
+		}
+
+		create_diplomatic_pact = {
+			country = c:TUR
+			type = rivalry
+		}
+	}
+
+	c:FRA = {
+		create_diplomatic_pact = {
+			country = c:GBR
+			type = rivalry
+		}
+	}
+
+	c:AUS = {
+		create_diplomatic_pact = {
+			country = c:GBR
+			type = rivalry
+		}
+	}
+
+	c:USA = {
+		create_diplomatic_pact = {
+			country = c:GBR
+			type = rivalry
+		}
+	}
+
+	c:PRU = {
+		create_diplomatic_pact = {
+			country = c:GBR
+			type = rivalry
+		}
+	}
+
+	c:RUS = {
+		create_diplomatic_pact = {
+			country = c:GBR
+			type = rivalry
+		}
+	}
+
+	c:TUR = {
+		create_diplomatic_pact = {
+			country = c:GBR
+			type = rivalry
+		}
+	}
+
+}

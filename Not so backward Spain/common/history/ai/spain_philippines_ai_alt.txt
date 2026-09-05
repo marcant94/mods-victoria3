@@ -1,0 +1,53 @@
+﻿
+AI = {
+	c:SPA = {
+		
+		# random_list = {
+		# 	50 = {
+		# 		set_secret_goal = {
+		# 			country = c:GBR
+		# 			secret_goal = befriend
+		# 		}
+		# 		set_secret_goal = {
+		# 			country = c:FRA
+		# 			secret_goal = antagonize
+		# 		}
+		# 	}
+			
+		# 	50 = {
+		# 		set_secret_goal = {
+		# 			country = c:GBR
+		# 			secret_goal = antagonize
+		# 		}
+		# 		set_secret_goal = {
+		# 			country = c:FRA
+		# 			secret_goal = befriend
+		# 		}
+		# 	}
+		# }
+		
+	}
+
+
+	c:PHI = {
+
+		set_secret_goal = {
+			country = c:MGD
+			secret_goal = antagonize
+		}
+		set_secret_goal = {
+			country = c:MGD
+			secret_goal = conquer
+		}
+
+		set_secret_goal = {
+			country = c:SUL
+			secret_goal = antagonize
+		}
+		set_secret_goal = {
+			country = c:SUL
+			secret_goal = conquer
+		}
+	}
+	
+}	

@@ -1,0 +1,45 @@
+﻿enable_efficient_construction = {
+	is_shown = {
+		is_player = yes
+		NOT = { has_global_variable = hide_mods_decisions }
+		NOT = {
+			has_modifier = mbfp_construction_extra
+		}
+	}
+
+	possible = {
+		is_player = yes
+		NOT = {
+			has_modifier = mbfp_construction_extra
+		}
+	}
+
+	when_taken = {
+		add_modifier = {
+			name = mbfp_construction_extra
+		}
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+disable_efficient_construction = {
+	is_shown = {
+		has_modifier = mbfp_construction_extra
+		NOT = { has_global_variable = hide_mods_decisions }
+	}
+
+	possible = {
+		has_modifier = mbfp_construction_extra
+	}
+
+	when_taken = {
+		remove_modifier = mbfp_construction_extra
+	}
+
+	ai_chance = {
+		value = 100
+	}
+}

@@ -1,0 +1,12 @@
+{
+    "name": "Instant Enact",
+    "id": "3055283612",
+    "version": "2.1",
+    "supported_game_version": "",
+    "short_description": "Instant enacts any given law that is currently being enacted",
+    "tags": ["Balance", "Fixes", "Gameplay", "Utilities"],
+    "relationships": [],
+    "game_custom_data": {
+        "multiplayer_synchronized": false
+    }
+}

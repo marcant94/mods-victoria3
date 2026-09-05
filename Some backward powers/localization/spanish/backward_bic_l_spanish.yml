@@ -1,0 +1,16 @@
+﻿l_spanish:
+ bic_backward_events.100.tt:0 "La vuelta de India a la edad media"
+ bic_backward_events.100.dd:0 "La vuelta de India a la edad media"
+ bic_backward_events.100.ff:0 "Adiós India"
+ bic_backward_events.100.aa:0 "Podemos reconstruirlo, tenemos la tecnología"
+ bic_backward_events.100.a:0 "Volver al pasado…"
+
+ bic_backward_decision:0 "La vuelta de India a la edad media"
+ bic_backward_decision_desc:0 "Devolver a India a la edad media"
+ 
+ bic_backward_event.2.t:0 "La decisión de retroceder India"
+ bic_backward_event.2.d:0 "¿Iniciar la vuelta a la edad media de India?"
+ bic_backward_event.2.ff:0 "Con solo pulsar un botón, decides el destino de este país..."
+ bic_backward_event.2.a:0 "Sí, hazlo"
+ bic_backward_event.2.x:0 "No (ocultar decisión y NO retroceder este país)"
+ 

@@ -1,0 +1,26 @@
+﻿l_english:
+ ottomans_backward_events.100.tt:0 "Ottomans backward at the start"
+ ottomans_backward_events.100.dd:0 "The backward of the Ottomans"
+ ottomans_backward_events.100.ff:0 "We will slightly speed up the events of this world. Let Egypt drive the Ottomans into stagnation in the current patch of the game - we will help them and bite off the maximum possible number of countries and peoples from them."
+ ottomans_backward_events.100.aa:0 "i'm sick of it"
+ ottomans_backward_events.100.b:0 "Play as Bulgaria"
+ ottomans_backward_events.100.c:0 "Play as Yugoslavia"
+ ottomans_backward_events.100.d:0 "Play as Armenia"
+ ottomans_backward_events.100.e:0 "Play as Syria"
+ ottomans_backward_events.100.f:0 "Play as Iraq"
+ ottomans_backward_events.100.g:0 "Play as Kurdistan"
+ ottomans_backward_events.100.h:0 "Play as Assyria"
+ ottomans_backward_events.100.i:0 "Play as Albania"
+ ottomans_backward_events.100.j:0 "Play as Bosnia and Herzegovina"
+ ottomans_backward_events.100.k:0 "Play as Cyprus"
+ ottomans_backward_events.100.l:0 "Play as Romania"
+ 
+ ottomans_backward_decision:0 "The backward of Ottomans"
+ ottomans_backward_decision_desc:0 "backward Ottomans in 1 click"
+
+ ottomans_backward_event.2.t:0 "The decision to backward Ottomans"
+ ottomans_backward_event.2.d:0 "Start the backward of Ottomans?"
+ ottomans_backward_event.2.ff:0 "With the push of a single button, you decide the fate of this country..."
+ ottomans_backward_event.2.a:0 "Yes, do it"
+ ottomans_backward_event.2.x:0 "No (hide decision and NOT backward this country)"
+

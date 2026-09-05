@@ -1,0 +1,18 @@
+GLOBAL = {
+    every_country = {
+		# if = {
+		# 	limit = {
+		# 		is_player = yes
+		# 	}
+		# }
+
+		ig:ig_trade_unions = {
+			add_ideology = ideology_social_democrat
+		}
+
+		ig:ig_intelligentsia = {
+			add_ideology = ideology_social_democrat
+		}
+		
+	}
+}

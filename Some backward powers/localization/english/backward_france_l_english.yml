@@ -1,0 +1,16 @@
+﻿l_english:
+ france_backward_events.100.tt:0 "France's return to the Middle Ages"
+ france_backward_events.100.dd:0 "France's return to the Middle Ages"
+ france_backward_events.100.ff:0 "Bye France"
+ france_backward_events.100.aa:0 "We can rebuild it, we have the technology!"
+ france_backward_events.100.a:0 "Back to the past..."
+
+ france_backward_decision:0 "The backward of France"
+ france_backward_decision_desc:0 "backward France in 1 click"
+ 
+ france_backward_event.2.t:0 "The decision to backward France"
+ france_backward_event.2.d:0 "Start the backward of France?"
+ france_backward_event.2.ff:0 "With the push of a single button, you decide the fate of this country..."
+ france_backward_event.2.a:0 "Yes, do it"
+ france_backward_event.2.x:0 "No (hide decision and NOT backward this country)"
+ 

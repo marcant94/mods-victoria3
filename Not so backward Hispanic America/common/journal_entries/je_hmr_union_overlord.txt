@@ -1,0 +1,139 @@
+﻿
+# Se crea la republica de Hispanoamérica
+je_hmr_overlord = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	group = je_group_historical_content
+
+	is_shown_when_inactive = {
+		any_subject_or_below = {
+			OR = {
+				country_has_primary_culture = cu:mexican
+				country_has_primary_culture = cu:argentine
+				country_has_primary_culture = cu:central_american
+				country_has_primary_culture = cu:caribeno
+				country_has_primary_culture = cu:north_andean
+				country_has_primary_culture = cu:south_andean
+				country_has_primary_culture = cu:chilean
+				country_has_primary_culture = cu:platinean
+				country_has_primary_culture = cu:ecuadorian
+				country_has_primary_culture = cu:colombian
+				country_has_primary_culture = cu:venezuelan
+				country_has_primary_culture = cu:peruvian
+				country_has_primary_culture = cu:bolivian
+				country_has_primary_culture = cu:paraguayan
+				country_has_primary_culture = cu:uruguayan
+			}
+			count >= 2
+		}
+		NOT = {
+			OR = {
+				country_has_primary_culture = cu:mexican
+				country_has_primary_culture = cu:argentine
+				country_has_primary_culture = cu:central_american
+				country_has_primary_culture = cu:caribeno
+				country_has_primary_culture = cu:north_andean
+				country_has_primary_culture = cu:south_andean
+				country_has_primary_culture = cu:chilean
+				country_has_primary_culture = cu:platinean
+				country_has_primary_culture = cu:ecuadorian
+				country_has_primary_culture = cu:colombian
+				country_has_primary_culture = cu:venezuelan
+				country_has_primary_culture = cu:peruvian
+				country_has_primary_culture = cu:bolivian
+				country_has_primary_culture = cu:paraguayan
+				country_has_primary_culture = cu:uruguayan
+			}
+		}
+	}
+
+	possible = {
+		has_technology_researched = nationalism
+	}
+
+	complete = {
+		any_subject_or_below = {
+			calc_true_if = {
+				amount >= 35 # of 58
+					# Los Andes - 13 States
+					owns_entire_state_region = STATE_LA_PAZ
+					owns_entire_state_region = STATE_PASTAZA
+					owns_entire_state_region = STATE_JUJUY
+					owns_entire_state_region = STATE_ECUADOR
+					owns_entire_state_region = STATE_SANTA_CRUZ
+					owns_entire_state_region = STATE_AREQUIPA
+					owns_entire_state_region = STATE_CAJAMARCA
+					owns_entire_state_region = STATE_ICA
+					owns_entire_state_region = STATE_LIMA
+					owns_entire_state_region = STATE_POTOSI
+					owns_entire_state_region = STATE_TARAPACA
+					owns_entire_state_region = STATE_ANTOFAGASTA
+					owns_entire_state_region = STATE_ACRE
+
+					# Gran Colombia - 8 States
+					owns_entire_state_region = STATE_BOLIVAR
+					owns_entire_state_region = STATE_CUNDINAMARCA
+					owns_entire_state_region = STATE_CAUCA
+					owns_entire_state_region = STATE_GUAVIARE
+					owns_entire_state_region = STATE_ZULIA
+					owns_entire_state_region = STATE_ANTIOQUIA
+					owns_entire_state_region = STATE_MIRANDA
+					owns_entire_state_region = STATE_GUAYANA
+
+					# La Plata - 13 States
+					owns_entire_state_region = STATE_SANTIAGO
+					owns_entire_state_region = STATE_PATAGONIA
+					owns_entire_state_region = STATE_ARAUCANIA
+					owns_entire_state_region = STATE_LOS_RIOS
+					owns_entire_state_region = STATE_SOUTH_ATLANTIC_ISLANDS
+					owns_entire_state_region = STATE_BAJO_PARAGUAY
+					owns_entire_state_region = STATE_ALTO_PARAGUAY
+					owns_entire_state_region = STATE_BUENOS_AIRES
+					owns_entire_state_region = STATE_CHACO
+					owns_entire_state_region = STATE_TUCUMAN
+					owns_entire_state_region = STATE_CORRIENTES
+					owns_entire_state_region = STATE_SANTA_FE
+					owns_entire_state_region = STATE_RIO_NEGRO
+					owns_entire_state_region = STATE_LA_PAMPA
+					owns_entire_state_region = STATE_URUGUAY
+
+					# Central America - 8 States
+					owns_entire_state_region = STATE_HONDURAS
+					owns_entire_state_region = STATE_NICARAGUA
+					owns_entire_state_region = STATE_COSTA_RICA
+					owns_entire_state_region = STATE_PANAMA
+					owns_entire_state_region = STATE_SAN_SALVADOR
+					owns_entire_state_region = STATE_YUCATAN
+					owns_entire_state_region = STATE_CHIAPAS
+					owns_entire_state_region = STATE_GUATEMALA
+					
+					# Caribbean - 2 States
+					owns_entire_state_region = STATE_CUBA
+					owns_entire_state_region = STATE_PUERTO_RICO
+
+					# Mexico - 13 States
+					owns_entire_state_region = STATE_SONORA
+					owns_entire_state_region = STATE_CHIHUAHUA
+					owns_entire_state_region = STATE_RIO_GRANDE
+					owns_entire_state_region = STATE_DURANGO
+					owns_entire_state_region = STATE_SINALOA
+					owns_entire_state_region = STATE_BAJIO
+					owns_entire_state_region = STATE_YUCATAN
+					owns_entire_state_region = STATE_MEXICO
+					owns_entire_state_region = STATE_VERACRUZ
+					owns_entire_state_region = STATE_GUERRERO
+					owns_entire_state_region = STATE_OAXACA
+					owns_entire_state_region = STATE_JALISCO
+					owns_entire_state_region = STATE_ZACATECAS
+			}
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = hmr_union.6 }
+	}
+
+	weight = 100
+
+	should_be_pinned_by_default = yes
+}

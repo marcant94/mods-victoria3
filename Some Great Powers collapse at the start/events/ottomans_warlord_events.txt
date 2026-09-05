@@ -1,0 +1,315 @@
+﻿namespace = ottomans_warlord_events
+
+ottomans_warlord_events.100 = { 
+	type = country_event
+	placement = c:TUR
+	duration = 1
+
+	title = ottomans_warlord_events.100.tt
+	desc = ottomans_warlord_events.100.dd
+	flavor = ottomans_warlord_events.100.ff
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_armored_train.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/armored_train"
+
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+
+	trigger = {
+	    #NOT = { has_global_variable = ottomans_collapse_var }
+	    #this = c:TUR
+		#exist = c:TUR
+	}
+
+	immediate = {
+		set_global_variable = ottomans_collapse_var
+		
+		if = {
+			limit = { exists = s:STATE_DOBRUDJA.region_state:TUR }
+			
+			#Румыния существует
+			if = { limit = { exists = c:ROM } 
+			     s:STATE_DOBRUDJA.region_state:TUR = { set_state_owner = c:ROM }
+			     }
+			   
+			#Румыния не существует
+			if = { 
+			 limit = { NOT = { exists = c:ROM } }
+             create_country = {
+				tag = ROM
+				origin = this
+				state = s:STATE_DOBRUDJA.region_state:TUR
+			}
+			}   
+			
+		}
+		
+		
+		if = {
+			limit = { exists = s:STATE_CYPRUS.region_state:TUR }
+			create_country = {
+				tag = CYP
+				origin = this
+				state = s:STATE_CYPRUS.region_state:TUR
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_BOSNIA.region_state:TUR }
+			create_country = {
+				tag = BOS
+				origin = this
+				state = s:STATE_BOSNIA.region_state:TUR
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_ALBANIA.region_state:TUR }
+			create_country = {
+				tag = ALB
+				origin = this
+				state = s:STATE_ALBANIA.region_state:TUR
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_MOSUL.region_state:TUR }
+			create_country = {
+				tag = ASS
+				origin = this
+				state = s:STATE_MOSUL.region_state:TUR
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_DIYARBAKIR.region_state:TUR }
+			create_country = {
+				tag = KUR
+				origin = this
+				state = s:STATE_DIYARBAKIR.region_state:TUR
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_BAGHDAD.region_state:TUR }
+			create_country = {
+				tag = IRQ
+				origin = this
+				state = s:STATE_BAGHDAD.region_state:TUR
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_DEIR_EZ_ZOR.region_state:TUR }
+			
+			#Сирия существует
+			if = { limit = { exists = c:SYR } 
+			     s:STATE_DEIR_EZ_ZOR.region_state:TUR = { set_state_owner = c:SYR }
+			     }
+			   
+			#Сирия не существует
+			if = { 
+			 limit = { NOT = { exists = c:SYR } }
+             create_country = {
+				tag = SYR
+				origin = this
+				state = s:STATE_DEIR_EZ_ZOR.region_state:TUR
+			}
+			}   
+			
+		}
+		
+		if = {
+			limit = { exists = s:STATE_KARS.region_state:TUR }
+			
+			#Армения существует
+			if = { limit = { exists = c:ARM } 
+			     s:STATE_KARS.region_state:TUR = { set_state_owner = c:ARM }
+			     }
+			   
+			#Армения не существует
+			if = { 
+			 limit = { NOT = { exists = c:ARM } }
+             create_country = {
+				tag = ARM
+				origin = this
+				state = s:STATE_KARS.region_state:TUR
+			 }
+			}
+
+            if = {
+				limit = { exists = s:STATE_ERZURUM.region_state:TUR }
+				s:STATE_ERZURUM.region_state:TUR = { set_state_owner = c:ARM }
+			 }			
+			
+		}
+		
+		if = {
+			limit = { exists = s:STATE_SOUTHERN_SERBIA.region_state:TUR }
+			create_country = {
+				tag = YUG
+				origin = this
+				state = s:STATE_SOUTHERN_SERBIA.region_state:TUR
+			}
+			if = {
+				limit = { exists = s:STATE_MONTENEGRO.region_state:TUR }
+				s:STATE_MONTENEGRO.region_state:TUR = { set_state_owner = c:YUG }
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_BULGARIA.region_state:TUR }
+			
+			#Болгария существует
+			if = { limit = { exists = c:BUL } 
+			     s:STATE_BULGARIA.region_state:TUR = { set_state_owner = c:BUL }
+			     }
+			   
+			#Болгрия не существует
+			if = { 
+			 limit = { NOT = { exists = c:BUL } }
+             create_country = {
+				tag = BUL
+				origin = this
+				state = s:STATE_BULGARIA.region_state:TUR
+			}
+			}
+
+            if = {
+				limit = { exists = s:STATE_NORTHERN_THRACE.region_state:TUR }
+				s:STATE_NORTHERN_THRACE.region_state:TUR = { set_state_owner = c:BUL }
+			}
+			if = {
+				limit = { exists = s:STATE_WESTERN_THRACE.region_state:TUR }
+				s:STATE_WESTERN_THRACE.region_state:TUR = { set_state_owner = c:BUL }
+			}
+			if = {
+				limit = { exists = s:STATE_SKOPIA.region_state:TUR }
+				s:STATE_SKOPIA.region_state:TUR = { set_state_owner = c:BUL }
+			}			
+			
+		}
+
+        #Отдаём грекам то что они заслужили
+        if = {
+				limit = { exists = s:STATE_THESSALIA.region_state:TUR }
+				s:STATE_THESSALIA.region_state:TUR = { set_state_owner = c:GRE }
+			}
+
+		every_subject_or_below = {
+			make_independent = yes
+		}
+
+
+	}
+	
+	option = {
+		default_option = yes
+		name = ottomans_warlord_events.100.aa
+	}
+	
+	option = {
+		name = ottomans_warlord_events.100.b
+		trigger = {
+			exists = c:BUL
+			is_player = yes
+		}
+		play_as = c:BUL
+	}
+	
+	option = {
+		name = ottomans_warlord_events.100.c
+		trigger = {
+			exists = c:YUG
+			is_player = yes
+		}
+		play_as = c:YUG
+	}
+	
+	option = {
+		name = ottomans_warlord_events.100.d
+		trigger = {
+			exists = c:ARM
+			is_player = yes
+		}
+		play_as = c:ARM
+	}
+	
+	option = {
+		name = ottomans_warlord_events.100.e
+		trigger = {
+			exists = c:SYR
+			is_player = yes
+		}
+		play_as = c:SYR
+	}
+	
+	option = {
+		name = ottomans_warlord_events.100.f
+		trigger = {
+			exists = c:IRQ
+			is_player = yes
+		}
+		play_as = c:IRQ
+	}
+	
+	option = {
+		name = ottomans_warlord_events.100.g
+		trigger = {
+			exists = c:KUR
+			is_player = yes
+		}
+		play_as = c:KUR
+	}
+	
+	option = {
+		name = ottomans_warlord_events.100.h
+		trigger = {
+			exists = c:ASS
+			is_player = yes
+		}
+		play_as = c:ASS
+	}
+	
+	option = {
+		name = ottomans_warlord_events.100.i
+		trigger = {
+			exists = c:ALB
+			is_player = yes
+		}
+		play_as = c:ALB
+	}
+	
+		option = {
+		name = ottomans_warlord_events.100.j
+		trigger = {
+			exists = c:BOS
+			is_player = yes
+		}
+		play_as = c:BOS
+	}
+	
+		option = {
+		name = ottomans_warlord_events.100.k
+		trigger = {
+			exists = c:CYP 
+			is_player = yes
+		}
+		play_as = c:CYP 
+	}
+	
+		option = {
+		name = ottomans_warlord_events.100.l
+		trigger = {
+			exists = c:ROM
+			is_player = yes
+		}
+		play_as = c:ROM
+	}
+}
+
+
+

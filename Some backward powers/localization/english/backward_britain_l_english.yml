@@ -1,0 +1,28 @@
+﻿l_english:
+ britain_backward_events.100.tt:0 "Britain backward at the start"
+ britain_backward_events.100.dd:0 "Britain backward"
+ britain_backward_events.100.ff:0 "Who would have thought that the country, after the ruler of which this game and era is named, fell apart at the start! Decolonization, including Albion, occurred 150 years earlier. At least who will now prevent other countries from sharing the rich British inheritance?"
+ britain_backward_events.100.aa:0 "We can rebuild it, we have the technology!"
+ britain_backward_events.100.a:0 "Back to the past..."
+ britain_backward_events.100.b:0 "Play as Newfoundland"
+ britain_backward_events.100.c:0 "Play as Andalusia (Gibraltar)"
+ britain_backward_events.100.d:0 "Play as Bahamas"
+ britain_backward_events.100.e:0 "Play as West-India"
+ britain_backward_events.100.f:0 "Play as Maya (VERY small territory)"
+ britain_backward_events.100.g:0 "Play as Amazonia"
+ britain_backward_events.100.h:0 "Play as Wales"
+ britain_backward_events.100.i:0 "Play as Scotland"
+ britain_backward_events.100.j:0 "Play as Ireland"
+ britain_backward_events.100.l:0 "Play as Jamaica"
+ britain_backward_events.100.m:0 "Play as Malta"
+ 
+ britain_backward_decision:0 "The backward of Britain"
+ britain_backward_decision_desc:0 "backward Britain in 1 click"
+
+ britain_backward_event.2.t:0 "The decision to backward Britain"
+ britain_backward_event.2.d:0 "Start the backward of Britain?"
+ britain_backward_event.2.ff:0 "With the push of a single button, you decide the fate of this country..."
+ britain_backward_event.2.a:0 "Yes, do it"
+ britain_backward_event.2.x:0 "No (hide decision and NOT backward this country)"
+ 
+

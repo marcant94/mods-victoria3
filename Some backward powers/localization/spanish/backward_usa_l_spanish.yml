@@ -1,0 +1,22 @@
+﻿l_spanish:
+ usa_backward_events.100.tt:0 "E.E.U.U. retrocede al inicio"
+ usa_backward_events.100.dd:0 "La vuelta a la edad media de E.E.U.U."
+ usa_backward_events.100.ff:0 "El sueño de alrededor de un tercio del mundo moderno, aunque "Victoria 3" todavía no permite dividir a Estados Unidos en estados específicos, y de hecho este país aún no está en la cima de su poder, ni siquiera llegó a la costa occidental del continente."
+ usa_backward_events.100.aa:0 "El oeste ha caido..."
+ usa_backward_events.100.a:0 "Jugar como CSA"
+ usa_backward_events.100.b:0 "Jugar como Nueva Inglaterra"
+ usa_backward_events.100.c:0 "Jugar como Nueva Africa"
+ usa_backward_events.100.d:0 "Jugar como Louisiana"
+ usa_backward_events.100.e:0 "Jugar como Cherokee"
+ usa_backward_events.100.f:0 "Jugar como Michigan"
+ usa_backward_events.100.g:0 "Jugar como la Confederación Iroquois"
+ usa_backward_events.100.h:0 "Jugar como Muskogee (nación descentralizada)"
+ 
+ usa_backward_decision:0 "La vuelta a la edad media de E.E.U.U."
+ usa_backward_decision_desc:0 "Retroceder E.E.U.U. en 1 click"
+
+ usa_backward_event.2.t:0 "La decisión de retroceder E.E.U.U."
+ usa_backward_event.2.d:0 "¿Iniciar la vuelta a la edad media de E.E.U.U.?"
+ usa_backward_event.2.ff:0 "Con solo pulsar un botón, decides el destino de este país..."
+ usa_backward_event.2.a:0 "Sí, hazlo"
+ usa_backward_event.2.x:0 "No (ocultar decisión y NO retroceder este país)"

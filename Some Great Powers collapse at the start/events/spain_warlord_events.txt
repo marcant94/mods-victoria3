@@ -1,0 +1,207 @@
+﻿namespace = spain_warlord_events
+
+spain_warlord_events.100 = { 
+	type = country_event
+	placement = c:SPA
+	duration = 1
+
+	title = spain_warlord_events.100.tt
+	desc = spain_warlord_events.100.dd
+	flavor = spain_warlord_events.100.ff
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_armored_train.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/armored_train"
+
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+
+	trigger = {
+	    #NOT = { has_global_variable = spain_collapse_var }
+	    #this = c:SPA
+		#exist = c:SPA
+	}
+
+	immediate = {
+	
+		set_global_variable = spain_collapse_var
+		
+		if = {
+			limit = { exists = s:STATE_PUERTO_RICO.region_state:SPA }
+			create_country = {
+				tag = PCO
+				origin = this
+				state = s:STATE_PUERTO_RICO.region_state:SPA
+			}
+		}
+		
+		if = {
+			limit = {
+				exists = c:POR
+			}
+			
+			if = {
+				limit = { exists = s:STATE_BEIRA.region_state:SPA }
+				s:STATE_BEIRA.region_state:SPA = { set_state_owner = c:POR }
+			}
+
+			if = {
+				limit = { exists = s:STATE_ALENTEJO.region_state:SPA }
+				s:STATE_ALENTEJO.region_state:SPA = { set_state_owner = c:POR }
+			}
+
+			if = {
+				limit = { exists = s:STATE_ESTREMADURA.region_state:SPA }
+				s:STATE_ESTREMADURA.region_state:SPA = { set_state_owner = c:POR }
+			}
+			
+			if = {
+				limit = { exists = s:STATE_AZORES.region_state:SPA }
+				s:STATE_AZORES.region_state:SPA = { set_state_owner = c:POR }
+			}
+			
+			if = {
+				limit = { exists = s:STATE_MADEIRA.region_state:SPA }
+				s:STATE_MADEIRA.region_state:SPA = { set_state_owner = c:POR }
+			}
+
+			if = {
+				limit = { exists = s:STATE_GALICIA.region_state:SPA }
+				s:STATE_GALICIA.region_state:SPA = { set_state_owner = c:POR }
+			}
+
+		}
+
+		
+		if = {
+			limit = { exists = s:STATE_GALICIA.region_state:SPA }
+			create_country = {
+				tag = GLI
+				origin = this
+				state = s:STATE_GALICIA.region_state:SPA
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_CATALONIA.region_state:SPA }
+			create_country = {
+				tag = CAT
+				origin = this
+				state = s:STATE_CATALONIA.region_state:SPA
+			}
+			if = {
+				limit = { exists = s:STATE_VALENCIA.region_state:SPA }
+				s:STATE_VALENCIA.region_state:SPA = { set_state_owner = c:CAT }
+			}
+			if = {
+				limit = { exists = s:STATE_BALEARES.region_state:SPA }
+				s:STATE_BALEARES.region_state:SPA = { set_state_owner = c:CAT }
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_ANDALUSIA.region_state:SPA }
+			
+			#Андалусии существует
+			if = { limit = { exists = c:ANL } 
+			     s:STATE_ANDALUSIA.region_state:SPA = { set_state_owner = c:ANL }
+			     }
+			   
+			#Андалусии не существует
+			if = { 
+			 limit = { NOT = { exists = c:ANL } }
+             create_country = {
+				tag = ANL
+				origin = this
+				state = s:STATE_ANDALUSIA.region_state:SPA
+			}
+			}			
+			
+			if = {
+				limit = { exists = s:STATE_BADAJOZ.region_state:SPA }
+				s:STATE_BADAJOZ.region_state:SPA = { set_state_owner = c:ANL }
+			}
+			if = {
+				limit = { exists = s:STATE_GRANADA.region_state:SPA }
+				s:STATE_GRANADA.region_state:SPA = { set_state_owner = c:ANL }
+			}
+		}
+		
+
+		c:SPA = { set_capital = STATE_ARAGON }
+		
+		if = {
+			limit = { exists = s:STATE_CASTILE.region_state:SPA }
+			create_country = {
+				tag = CAS
+				origin = this
+				state = s:STATE_CASTILE.region_state:SPA
+			}
+			if = {
+				limit = { exists = s:STATE_NAVARRA.region_state:SPA }
+				s:STATE_NAVARRA.region_state:SPA = { set_state_owner = c:CAS }
+			}
+			if = {
+				limit = { exists = s:STATE_ASTURIAS.region_state:SPA }
+				s:STATE_ASTURIAS.region_state:SPA = { set_state_owner = c:CAS }
+			}
+			if = {
+				limit = { exists = s:STATE_TOLEDO.region_state:SPA }
+				s:STATE_TOLEDO.region_state:SPA = { set_state_owner = c:CAS }
+			}
+		}
+
+		every_subject_or_below = {
+			make_independent = yes
+		}
+
+
+	}
+	
+	option = {
+		default_option = yes
+		name = spain_warlord_events.100.aa
+	}
+	
+	option = {
+		name = spain_warlord_events.100.a
+		trigger = {
+			exists = c:CAS
+			is_player = yes
+		}
+		play_as = c:CAS
+	}
+	
+	option = {
+		name = spain_warlord_events.100.b
+		trigger = {
+			exists = c:ANL
+			is_player = yes
+		}
+		play_as = c:ANL
+	}
+	
+	option = {
+		name = spain_warlord_events.100.c
+		trigger = {
+			exists = c:CAT
+			is_player = yes
+		}
+		play_as = c:CAT
+	}
+	
+	option = {
+		name = spain_warlord_events.100.d
+		trigger = {
+			exists = c:PCO
+			is_player = yes
+		}
+		play_as = c:PCO
+	}
+
+}
+
+
+

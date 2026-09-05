@@ -1,0 +1,153 @@
+﻿namespace = hmr_union
+
+# Hispanic America colony absorbs a poorer neighbor
+hmr_union.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = hmr_union.1.t
+	desc = hmr_union.1.d
+	flavor = hmr_union.1.f
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		random_neighbouring_state = {
+			limit = {
+				owner = {
+					is_ai = yes
+					relations:root >= relations_threshold:amicable
+					OR = {
+						country_has_primary_culture = cu:mexican
+						country_has_primary_culture = cu:argentine
+						country_has_primary_culture = cu:central_american
+						country_has_primary_culture = cu:caribeno
+						country_has_primary_culture = cu:north_andean
+						country_has_primary_culture = cu:south_andean
+						country_has_primary_culture = cu:chilean
+						country_has_primary_culture = cu:platinean
+						country_has_primary_culture = cu:ecuadorian
+						country_has_primary_culture = cu:colombian
+						country_has_primary_culture = cu:venezuelan
+						country_has_primary_culture = cu:peruvian
+						country_has_primary_culture = cu:bolivian
+						country_has_primary_culture = cu:paraguayan
+						country_has_primary_culture = cu:uruguayan
+					}
+					is_subject = yes
+					NOT = { THIS = ROOT }
+					top_overlord = {
+						THIS = root.top_overlord
+					}
+					this.gdp < root.gdp
+				}
+			}
+			owner = { save_scope_as = hmr_annex_scope }
+		}
+		top_overlord = {
+			save_scope_as = hmr_overlord_country
+			ruler = {
+				save_scope_as = hmr_overlord_ruler
+			}
+		}
+	}
+
+	option = {
+		name = hmr_union.1.a
+		default_option = yes
+		hidden_effect = {
+			every_state = {
+				limit = {
+					has_claim_by = scope:hmr_annex_scope
+				}
+				state_region = {
+					remove_claim = scope:hmr_annex_scope
+					add_claim = ROOT
+				}
+			}
+		}
+		
+		
+		# Si los militares ya se hicieron con el poder, no lo perderán
+		# if = {
+		# 	limit = {
+		# 		has_modifier = age_of_caudillos_modifier
+		# 	}
+		# 	remove_modifier = age_of_caudillos_modifier
+		# }
+
+		# Si tiene el diario de los caudillos por haberse independizado de España, ahora lo lógico es perderlo
+		if = {
+			limit = {
+				has_journal_entry = je_caudillo
+			}
+			change_variable = { name = caudillo_var add = -100000 }
+		}
+
+		annex_with_incorporation = scope:hmr_annex_scope
+	}
+	
+	option = {
+		name = hmr_union.1.z
+	}
+
+}
+
+# Hispanic America complete event for Hispanic America
+hmr_union.5 = {
+	type = country_event
+	placement = ROOT
+
+	title = hmr_union.5.t
+	desc = hmr_union.5.d
+	flavor = hmr_union.5.f
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		top_overlord = {
+			save_scope_as = hmr_overlord_country
+			ruler = {
+				save_scope_as = hmr_overlord_ruler
+			}
+		}
+	}
+
+	option = {
+		name = hmr_union.5.a
+		add_modifier = {
+			name = lat_unified_subject
+			months = normal_modifier_time
+		}
+
+		# if = {
+		# 	limit = {
+		# 		NOT = { is_subject_type = subject_type_dominion }
+		# 	}
+		# 	change_subject_type = subject_type_dominion
+		# }
+
+	}
+}

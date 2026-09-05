@@ -1,0 +1,13 @@
+{
+  "name" : "Not so backward Spain",
+  "id" : "3048235488",
+  "version" : "30.0",
+  "supported_game_version" : "",
+  "picture": "thumbnail.png",
+  "short_description" : "Spain was bad at this time, but not as Victoria 3 represents it in its Vanilla version",
+  "tags" : ["Balance", "Cultures And Religions", "Utilities", "Events", "Alternative History"],
+  "relationships" : [],
+  "game_custom_data" : {
+    "multiplayer_synchronized" : true
+  }
+}

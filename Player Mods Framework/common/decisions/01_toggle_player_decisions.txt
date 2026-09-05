@@ -1,0 +1,43 @@
+show_player_decisions = {
+	is_shown = {
+		is_player = yes
+		has_global_variable = hide_mods_decisions
+	}
+
+	possible = {
+		is_player = yes
+		has_global_variable = hide_mods_decisions
+	}
+
+	when_taken = {
+		remove_global_variable = hide_mods_decisions
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+hide_player_decisions = {
+	is_shown = {
+		is_player = yes
+		NOT = {
+			has_global_variable = hide_mods_decisions
+		}
+	}
+
+	possible = {
+		is_player = yes
+		NOT = {
+			has_global_variable = hide_mods_decisions
+		}
+	}
+
+	when_taken = {
+		set_global_variable = hide_mods_decisions
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}

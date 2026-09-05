@@ -1,0 +1,7 @@
+﻿l_spanish:
+  enable_more_tech: "Activar: Más tecnología para el jugador"
+  enable_more_tech_desc: "El jugador obtiene velocidad de investigación y capacidad de innovación extra"
+  disable_more_tech: "Desactivar: Más tecnología para el jugador"
+  disable_more_tech_desc: "El jugador deja de recibir velocidad de investigación y capacidad de innovación extra"
+  mtfp_university_extra:0 "Bono de tecnología del jugador"
+ 

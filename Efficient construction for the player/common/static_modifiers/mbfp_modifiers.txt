@@ -1,0 +1,23 @@
+# All global modifiers are here.  They are applied from certain game-features.
+#
+# Effects are fully scriptable here.
+#these names can NOT be removed or changed, as the code uses them....
+
+mbfp_construction_extra = {
+	# icon = gfx/interface/icons/modifier_icons/mbfp.dds
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+
+	# NUNCA usar building_goods_input_mult, afecta a todos los eficicios, no solo a los de construcción
+	# Usar en su lugar building_construction_sector_throughput_add para reducir consumo de productos
+	# Y usar building_goods_input_mult para reducir los precios que paga la construcción por el consumo de productos
+
+	state_construction_mult = 0.15 # Eficiencia de construcción estatal
+
+	country_construction_goods_cost_mult = -0.35 # Coste de bienes de construcción
+
+	# Esto aumenta la eficiencia pero tambien el insumo de bienes y arruina la economia si sube mucho
+	building_construction_sector_throughput_add = 0.15 # Una bonificación o penalización tanto al insumo como al producto final del edificio de construccion
+
+	country_max_weekly_construction_progress_add = 10 # Progreso máx. de construcción semanal de un proyecto
+	country_construction_add = 20 # La cantidad de construcción que produce un sector de la construcción
+}

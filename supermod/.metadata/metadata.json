@@ -1,0 +1,12 @@
+{
+    "name": "supermod",
+    "id": "",
+    "version": "1.0",
+    "supported_game_version": "",
+    "short_description": "",
+    "tags": ["Balance", "Fixes", "Gameplay", "Utilities"],
+    "relationships": [],
+    "game_custom_data": {
+        "multiplayer_synchronized": false
+    }
+}

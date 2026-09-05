@@ -1,0 +1,45 @@
+﻿enable_no_infamy_decision = {
+	is_shown = {
+		is_player = yes
+		NOT = { has_global_variable = hide_mods_decisions }
+		NOT = {
+			has_modifier = less_infamy_player
+		}
+	}
+
+	possible = {
+		is_player = yes
+		NOT = {
+			has_modifier = less_infamy_player
+		}
+	}
+
+	when_taken = {
+		add_modifier = {
+			name = less_infamy_player
+		}
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+disable_no_infamy_decision = {
+	is_shown = {
+		has_modifier = less_infamy_player
+		NOT = { has_global_variable = hide_mods_decisions }
+	}
+
+	possible = {
+		has_modifier = less_infamy_player
+	}
+
+	when_taken = {
+		remove_modifier = less_infamy_player
+	}
+
+	ai_chance = {
+		value = 100
+	}
+}

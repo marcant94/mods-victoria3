@@ -1,0 +1,270 @@
+﻿namespace = usa_warlord_events
+
+usa_warlord_events.100 = { 
+	type = country_event
+	placement = c:USA
+	duration = 1
+
+	title = usa_warlord_events.100.tt
+	desc = usa_warlord_events.100.dd
+	flavor = usa_warlord_events.100.ff
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_armored_train.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/armored_train"
+
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+
+	trigger = {
+	    #NOT = { has_global_variable = usa_collapse_var }
+	    #this = c:USA
+		#exist = c:USA
+	}
+
+	immediate = {
+	
+	    set_global_variable = usa_collapse_var
+		
+		if = {
+			limit = { exists = s:STATE_FLORIDA.region_state:USA }
+			create_country = {
+				tag = MSC
+				origin = this
+				state = s:STATE_FLORIDA.region_state:USA
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_NEW_YORK.region_state:USA }
+			create_country = {
+				tag = IRO
+				origin = this
+				state = s:STATE_NEW_YORK.region_state:USA
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_TEXAS.region_state:USA }
+			create_country = {
+				tag = TEX
+				origin = this
+				state = s:STATE_TEXAS.region_state:USA
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_MICHIGAN.region_state:USA }
+			create_country = {
+				tag = UOM
+				origin = this
+				state = s:STATE_MICHIGAN.region_state:USA
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_ARKANSAS.region_state:USA }
+			create_country = {
+				tag = CHE
+				origin = this
+				state = s:STATE_ARKANSAS.region_state:USA
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_LOUISIANA.region_state:USA }
+			create_country = {
+				tag = LOU
+				origin = this
+				state = s:STATE_LOUISIANA.region_state:USA
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_ALABAMA.region_state:USA }
+			create_country = {
+				tag = ASA
+				origin = this
+				state = s:STATE_ALABAMA.region_state:USA
+			}
+			if = {
+				limit = { exists = s:STATE_MISSISSIPPI.region_state:USA }
+				s:STATE_MISSISSIPPI.region_state:USA = { set_state_owner = c:ASA }
+			}
+			if = {
+				limit = { exists = s:STATE_GEORGIA.region_state:USA }
+				s:STATE_GEORGIA.region_state:USA = { set_state_owner = c:ASA }
+			}
+			if = {
+				limit = { exists = s:STATE_SOUTH_CAROLINA.region_state:USA }
+				s:STATE_SOUTH_CAROLINA.region_state:USA = { set_state_owner = c:ASA }
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_MAINE.region_state:USA }
+			create_country = {
+				tag = NEN
+				origin = this
+				state = s:STATE_MAINE.region_state:USA
+			}
+			if = {
+				limit = { exists = s:STATE_NEW_HAMPSHIRE.region_state:USA }
+				s:STATE_NEW_HAMPSHIRE.region_state:USA = { set_state_owner = c:NEN }
+			}
+			if = {
+				limit = { exists = s:STATE_VERMONT.region_state:USA }
+				s:STATE_VERMONT.region_state:USA = { set_state_owner = c:NEN }
+			}
+			if = {
+				limit = { exists = s:STATE_MASSACHUSETTS.region_state:USA }
+				s:STATE_MASSACHUSETTS.region_state:USA = { set_state_owner = c:NEN }
+			}
+			if = {
+				limit = { exists = s:STATE_CONNECTICUT.region_state:USA }
+				s:STATE_CONNECTICUT.region_state:USA = { set_state_owner = c:NEN }
+			}
+			if = {
+				limit = { exists = s:STATE_RHODE_ISLAND.region_state:USA }
+				s:STATE_RHODE_ISLAND.region_state:USA = { set_state_owner = c:NEN }
+			}
+		}
+		
+		if = {
+			limit = { exists = s:STATE_NORTH_CAROLINA.region_state:USA }
+			
+			#КША существует
+			if = { limit = { exists = c:CSA } 
+			     s:STATE_NORTH_CAROLINA.region_state:USA = { set_state_owner = c:CSA }
+			     }
+			   
+			#КША не существует
+			if = { 
+			 limit = { NOT = { exists = c:CSA } }
+             create_country = {
+				tag = CSA
+				origin = this
+				state = s:STATE_NORTH_CAROLINA.region_state:USA
+			}
+			}		
+             
+            if = {
+				limit = { exists = s:STATE_VIRGINIA.region_state:USA }
+				s:STATE_VIRGINIA.region_state:USA = { set_state_owner = c:CSA }
+			}
+			if = {
+				limit = { exists = s:STATE_WEST_VIRGINIA.region_state:USA }
+				s:STATE_WEST_VIRGINIA.region_state:USA = { set_state_owner = c:CSA }
+			}
+			if = {
+				limit = { exists = s:STATE_KENTUCKY.region_state:USA }
+				s:STATE_KENTUCKY.region_state:USA = { set_state_owner = c:CSA }
+			}
+			if = {
+				limit = { exists = s:STATE_TENNESSEE.region_state:USA }
+				s:STATE_TENNESSEE.region_state:USA = { set_state_owner = c:CSA }
+			}
+			if = {
+				limit = { exists = s:STATE_MISSOURI.region_state:USA }
+				s:STATE_MISSOURI.region_state:USA = { set_state_owner = c:CSA }
+			}
+			if = {
+				limit = { exists = s:STATE_MARYLAND.region_state:USA }
+				s:STATE_MARYLAND.region_state:USA = { set_state_owner = c:CSA }
+			}
+			if = {
+				limit = { exists = s:STATE_DELAWARE.region_state:USA }
+				s:STATE_DELAWARE.region_state:USA = { set_state_owner = c:CSA }
+			}			 
+			
+		}
+		
+		every_subject_or_below = {
+			make_independent = yes
+		}
+	}
+	
+	option = {
+		default_option = yes
+		name = usa_warlord_events.100.aa
+	}
+	
+	option = {
+		name = usa_warlord_events.100.a
+		trigger = {
+			exists = c:CSA
+			is_player = yes
+		}
+		play_as = c:CSA
+	}
+	
+	option = {
+		name = usa_warlord_events.100.b
+		trigger = {
+			exists = c:NEN
+			is_player = yes
+		}
+		play_as = c:NEN
+	}
+	
+	option = {
+		name = usa_warlord_events.100.c
+		trigger = {
+			exists = c:ASA
+			is_player = yes
+		}
+		play_as = c:ASA
+	}
+	
+	option = {
+		name = usa_warlord_events.100.d
+		trigger = {
+			exists = c:LOU
+			is_player = yes
+		}
+		play_as = c:LOU
+	}
+	
+	option = {
+		name = usa_warlord_events.100.e
+		trigger = {
+			exists = c:CHE
+			is_player = yes
+		}
+		play_as = c:CHE
+	}
+	
+	option = {
+		name = usa_warlord_events.100.f
+		trigger = {
+			exists = c:UOM
+			is_player = yes
+		}
+		play_as = c:UOM
+	}
+	
+	option = {
+		name = usa_warlord_events.100.g
+		trigger = {
+			exists = c:IRO
+			is_player = yes
+		}
+		play_as = c:IRO
+	}
+	
+	option = {
+		name = usa_warlord_events.100.h
+		trigger = {
+			exists = c:MSC
+			is_player = yes
+		}
+		play_as = c:MSC
+	}
+	
+
+}
+
+
+
