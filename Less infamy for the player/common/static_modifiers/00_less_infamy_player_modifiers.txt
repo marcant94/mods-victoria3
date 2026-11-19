@@ -8,5 +8,4 @@ less_infamy_player = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
 	
 	country_infamy_decay_mult = 2.0
-	country_infamy_generation_mult = -0.75
 }

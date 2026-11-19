@@ -1,9 +1,9 @@
 ﻿l_spanish:
   enable_no_infamy_decision: "Activar: Menos infamia para el jugador"
-  enable_no_infamy_decision_desc: "El jugador recibe menos infamia"
+  enable_no_infamy_decision_desc: "La infamia del jugador se reduce el doble de rápido"
   disable_no_infamy_decision: "Desactivar: Menos infamia para el jugador"
-  disable_no_infamy_decision_desc: "El jugador deja de recibir menos infamia"
-  less_infamy_player:0 "Bono de reducción de infamia para el jugador"
+  disable_no_infamy_decision_desc: "La infamia del jugador se reduce a ritmo normal"
+  less_infamy_player:0 "Reducción de infamia más rápida para el jugador"
 
 
   

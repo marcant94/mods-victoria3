@@ -1,9 +1,9 @@
 ﻿l_english:
   enable_no_infamy_decision: "Enable: Less infamy for the player"
-  enable_no_infamy_decision_desc: "The player receives less infamy"
+  enable_no_infamy_decision_desc: "The player's infamy decays twice as fast"
   disable_no_infamy_decision: "Disable: Less infamy for the player"
-  disable_no_infamy_decision_desc: "The player stops receiving less infamy"
-  less_infamy_player:0 "Infamy reduction bonus for player"
+  disable_no_infamy_decision_desc: "The player's infamy decays at the normal rate"
+  less_infamy_player:0 "Faster infamy decay for player"
   
 
   
