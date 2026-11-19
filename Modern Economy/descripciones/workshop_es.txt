@@ -1,0 +1,31 @@
+Añade dos nuevas leyes económicas inspiradas en la economía de los siglos XX y XXI:
+La Economía Social de Mercado y el Globalismo Cooperativo, con sus correspondientes ideologías de grupos de interés.
+
+Economía Social de Mercado:
++1 Privilegios de compañía gratis
++65% Asignación a construcción privada
+-15% Tipo de interés de préstamo
++75% Reinversión de Dividendos gubernamentales
++25% Eficiencia de Dividendos gubernamentales
++10% Capacidad tributaria
+-10% Multiplicador de costes de población en burocracia
++10% Difusión tecnológica para producción
++10% Rendimiento de Industrias manufactureras
++50% Retorno de la inversión por Nacionalización
++20% Probabilidad de autoinversión en Edificio
+Desactivar Nacionalización sin compensación
+Prohibir Monopolios
+Forzar Privatización
+-10% Eficacia de contribución al fondo de inversión de Aristócratas
++10% Eficacia de contribución al fondo de inversión de Burócratas
++10% Eficacia de contribución al fondo de inversión de Capitalistas
++10% Eficacia de contribución al fondo de inversión de Agricultores
++10% Eficacia de contribución al fondo de inversión de Comerciantes
+
+Globalismo Cooperativo:
++20% Aranceles máximos a las importaciones
++20% Aranceles máximos a las exportaciones
++15% Subvenciones máximas a las importaciones
++15% Subvenciones máximas a las exportaciones
++15% Ventaja comercial
++15% Resistencia a Potestad

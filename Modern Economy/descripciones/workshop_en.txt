@@ -1,0 +1,31 @@
+It adds two new economic laws inspired by 20th and 21st-century economics:
+The Social Market Economy and Cooperative Globalism, with their corresponding interest group ideologies.
+
+Social Market Economy:
++1 Free Company Charters
++65% Private Construction Allocation
+-15% Loan interest rate
++75% Government Dividends Reinvestment
++25% Government Dividends Efficiency
++10% Taxation Capacity
+-10% Bureaucracy Population Cost Multiplier
++10% Technology Spread for Production
++10% Manufacturing Industries Throughput
++50% Nationalization Investment Return
++20% Building Self-Investment Chance
+Disable Nationalization without compensation
+Forbid Monopolies
+Force Privatization
+-10% Aristocrats Investment Pool contribution efficiency
++10% Bureaucrats Investment Pool contribution efficiency
++10% Capitalists Investment Pool contribution efficiency
++10% Farmers Investment Pool contribution efficiency
++10% Shopkeepers Investment Pool contribution efficiency
+
+Cooperative Globalism:
++20% Maximum Tariffs on Imports
++20% Maximum Tariffs on Exports
++15% Maximum Subventions on Imports
++15% Maximum Subventions on Exports
++15% Trade Advantage
++15% Leverage Resistance

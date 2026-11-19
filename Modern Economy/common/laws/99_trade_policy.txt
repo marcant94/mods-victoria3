@@ -22,12 +22,11 @@ law_cooperative_globalism = {
 		state_tariff_import_add = 0.20
 		state_tariff_export_add = 0.20
 
-		state_subvention_export_add = 0.15
 		state_subvention_import_add = 0.15
-
-		country_leverage_resistance_mult = 0.15
+		state_subvention_export_add = 0.15
 
 		state_trade_advantage_mult = 0.15
+		country_leverage_resistance_mult = 0.15
 		# state_import_advantage_mult = 0.10
 		# state_export_advantage_mult = 0.10
 	}
