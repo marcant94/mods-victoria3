@@ -13,3 +13,11 @@
  
  ideology_protectionist_conservative: "Protectionist Conservative"
  ideology_protectionist_conservative_desc: "Opposes excessive international trade and foreign economic interference. Prefers traditional economic models and national self-sufficiency over radical market reforms."
+ 
+ movement_social_market: "Social Market Movement"
+ movement_social_market_short: "Social Market"
+ movement_social_market_name: "$movement_social_market$"
+ movement_social_market_icon: "@movement_category_ideological!"
+ 
+ ideology_social_market_movement: "Social Market Movement"
+ ideology_social_market_movement_desc: "Believes a modern economy must combine free markets and private enterprise with social protection and international cooperation."

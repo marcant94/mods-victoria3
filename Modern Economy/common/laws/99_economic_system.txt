@@ -27,20 +27,19 @@ law_social_market_economy = {
 		country_disable_nationalization_without_compensation_bool = yes # Prohibimos la nacionalización sin compensación para proteger a los inversores
 		country_forbid_monopoly_bool = yes # Prohibimos los monopolios para fomentar la competencia
 		country_disable_nationalization_bool = no # No prohibimos la nacionalización
-		# country_force_privatization_bool = yes # Forzamos la privatización por defecto
+		country_force_privatization_bool = yes # Forzamos la privatización por defecto
 		
 		country_free_charters_add = 1
 		building_self_investment_chance_add = 0.20 # Aumenta la probabilidad de inversión de los edificios
-		state_bureaucracy_population_base_cost_factor_mult = -0.05 # Reduce el costo base de la burocracia por población
+		state_bureaucracy_population_base_cost_factor_mult = -0.10 # Estado moderno y eficiente: menos burocracia
 		state_tax_capacity_mult = 0.10 # Mejora la capacidad tributaria
 		country_production_tech_spread_mult = 0.10 # Aumenta la difusión de tecnologías de producción
 		country_private_construction_allocation_mult = 0.65 # Asigna la construcción privada al 65%
 		country_loan_interest_rate_mult = -0.15 # Reduce el interés de los préstamos
 		building_nationalization_investment_return_add = 0.50 # Aumenta el retorno de inversión de las nacionalizaciones
 		country_government_dividends_reinvestment_add = 0.75 # Aumenta la reinversión de los dividendos del gobierno
-		building_group_bg_agriculture_throughput_add = 0.10 # Aumenta el rendimiento de los edificios agrícolas
-		building_group_bg_plantations_throughput_add = 0.10 # Aumenta el rendimiento de los edificios de plantaciones
-		country_government_dividends_efficiency_add = 0.40 # Aumenta la eficiencia de los dividendos del gobierno
+		building_group_bg_manufacturing_throughput_add = 0.10 # Industria moderna y más eficiente
+		country_government_dividends_efficiency_add = 0.25 # Aumenta la eficiencia de los dividendos del gobierno
 		
 		state_shopkeepers_investment_pool_efficiency_mult = 0.10 # Aumenta la eficiencia del pool de inversión de los comerciantes
 		state_capitalists_investment_pool_efficiency_mult = 0.10 # Aumenta la eficiencia del pool de inversión de los capitalistas

@@ -1,6 +1,6 @@
 ﻿l_spanish:
  law_social_market_economy: "Economía Social de Mercado"
- law_social_market_economy_desc: "Un sistema económico mixto que combina una economía de mercado libre con redes de seguridad social sólidas y regulación gubernamental. El estado asegura la competencia justa, protege a los trabajadores y proporciona servicios esenciales mientras mantiene una economía impulsada por el mercado."
+ law_social_market_economy_desc: "Un sistema económico mixto que combina una economía de mercado libre con redes de seguridad social sólidas y regulación gubernamental. El Estado asegura la competencia justa, protege a los trabajadores y proporciona servicios esenciales mientras mantiene una economía impulsada por el mercado."
 
  law_cooperative_globalism: "Globalismo Cooperativo"
  law_cooperative_globalism_desc: "Una filosofía económica que promueve el comercio internacional y la cooperación basada en beneficio mutuo y solidaridad. Las naciones trabajan juntas a través de acuerdos bilaterales y multilaterales para expandir el comercio mientras mantienen estándares justos de trabajo y ambientales."
@@ -13,3 +13,11 @@
  
  ideology_protectionist_conservative: "Conservador Proteccionista"
  ideology_protectionist_conservative_desc: "Se opone al comercio internacional excesivo y a la interferencia económica extranjera. Prefiere modelos económicos tradicionales y la autosuficiencia nacional sobre reformas de mercado radicales."
+ 
+ movement_social_market: "Movimiento de Economía Social de Mercado"
+ movement_social_market_short: "Economía Social"
+ movement_social_market_name: "$movement_social_market$"
+ movement_social_market_icon: "@movement_category_ideological!"
+ 
+ ideology_social_market_movement: "Movimiento de Economía Social de Mercado"
+ ideology_social_market_movement_desc: "Defiende que una economía moderna debe combinar el libre mercado y la empresa privada con la protección social y la cooperación internacional."

@@ -2,11 +2,11 @@ ideology_social_market_supporter = {
 	icon = "gfx/interface/icons/ideology_icons/liberal.dds"
 
 	lawgroup_economic_system = {
-		law_social_market_economy = strongly_approve
+		law_social_market_economy = approve
 	}
 
 	lawgroup_trade_policy = {
-		law_cooperative_globalism = strongly_approve
+		law_cooperative_globalism = approve
 	}
 }
 
@@ -14,7 +14,7 @@ ideology_market_globalist = {
 	icon = "gfx/interface/icons/ideology_icons/republican.dds"
 
 	lawgroup_economic_system = {
-		law_social_market_economy = approve
+		law_social_market_economy = strongly_approve
 	}
 
 	lawgroup_trade_policy = {
@@ -26,10 +26,10 @@ ideology_protectionist_conservative = {
 	icon = "gfx/interface/icons/ideology_icons/reactionary.dds"
 
 	lawgroup_economic_system = {
-		law_social_market_economy = disapprove
+		law_social_market_economy = strongly_disapprove
 	}
 
 	lawgroup_trade_policy = {
-		law_cooperative_globalism = disapprove
+		law_cooperative_globalism = strongly_disapprove
 	}
 }

@@ -1,9 +1,0 @@
-# All global modifiers are here.  They are applied from certain game-features.
-#
-# Effects are fully scriptable here.
-#these names can NOT be removed or changed, as the code uses them....
-me_force_privatize = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
-
-	country_force_privatization_bool = yes
-}
