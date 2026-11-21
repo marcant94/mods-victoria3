@@ -1,4 +1,4 @@
-GLOBAL = {
+﻿GLOBAL = {
 	every_country = {
 		# Ideologías a favor de Economía Social de Mercado y Globalismo Cooperativo
 		ig:ig_trade_unions ?= {

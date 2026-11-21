@@ -1,4 +1,4 @@
-ideology_social_market_supporter = {
+﻿ideology_social_market_supporter = {
 	icon = "gfx/interface/icons/ideology_icons/liberal.dds"
 
 	lawgroup_economic_system = {

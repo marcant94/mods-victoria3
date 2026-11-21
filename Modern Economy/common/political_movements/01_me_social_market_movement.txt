@@ -1,4 +1,4 @@
-movement_social_market = {
+﻿movement_social_market = {
 	category = movement_category_ideological
 
 	ideology = ideology_social_market_movement
